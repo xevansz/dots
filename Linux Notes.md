@@ -13,6 +13,8 @@ https://github.com/Edesem/Suckless
 https://wiki.archlinux.org/title/general_recommendations#Graphical_user_interface
 
 - [ ] firewall for linux: ufw
+- [ ] firefox - https://www.google.com/search?client=firefox-b-d&q=simplefox+guthub try with pywall theme
+- [ ] nvim - https://github.com/projekt0n/caret.nvim
 sudo systemctl enable ufw.service
 sudo systemctl start ufw.service
 sudo ufw status verbose
