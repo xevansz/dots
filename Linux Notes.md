@@ -6,10 +6,12 @@ Everything is a tool and we need to learn how to use it and apply the methods fr
 
 https://github.com/basilioss/dotfiles
 https://github.com/raihanadf/dotfiles
-https://github.com/betterlockscreen/betterlockscreen
 https://github.com/Edesem/Suckless
 
 https://wiki.archlinux.org/title/general_recommendations#Graphical_user_interface
+
+for japanese fonts install noto-fonts-cjk noto-fonts-emoji noto-fonts
+for general fonts styles install ttf-linux-libertine ttf-dejavu ttf-inconsolata
 
 - [ ] firewall for linux: ufw
 sudo systemctl enable ufw.service
