@@ -39,6 +39,16 @@ xset r rate 300 50 &
 exec dwm
 - [ ] paccache
 
+libreoffice
+chromium 
+NixNote
+concky, screenlets
+f.lux
+transmission deluge qbittorrent
+thunderbird - gmail
+nextcloud - check it out
+Mattersmast - do check it 
+logseg - obsidian alternative
 - [ ] linux-lts linux-lts-headers
 - [ ] install microcode
 - [ ] picom compositer
