@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "980d8f59c3ebdf88",
+    "id": "437aba3fafe2efc2",
     "type": "split",
     "children": [
       {
-        "id": "844dd94b6a7e3ee7",
+        "id": "20ada974ba3a1041",
         "type": "tabs",
         "children": [
           {
-            "id": "8386a33ebdcd27e9",
+            "id": "cdad34bbe6ca0304",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c56eb13f04fd0abd",
+    "id": "51c5f0ef8b424436",
     "type": "split",
     "children": [
       {
-        "id": "cd88b962b7eba514",
+        "id": "5a5a943f685c813f",
         "type": "tabs",
         "children": [
           {
-            "id": "d07cc91af78c90c2",
+            "id": "1074be17d8ba8009",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "edd1ea7aed868634",
+            "id": "45e7271c77111da6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "b23eb518a11ac71c",
+            "id": "ca6c8bd339cac509",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "17be345b572736bc",
+    "id": "320e9aa88b1d8130",
     "type": "split",
     "children": [
       {
-        "id": "d4e453666c505c96",
+        "id": "2273b71f9052243f",
         "type": "tabs",
         "children": [
           {
-            "id": "63903e3fa514fb55",
+            "id": "70819d46714a53b7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux Notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "c6955c26cd6e5799",
+            "id": "51705cee44931424",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux Notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "6deb0a6906da9094",
+            "id": "5a23e6b15ce1a849",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +120,12 @@
             }
           },
           {
-            "id": "52b5bed009e375f4",
+            "id": "289cc7ae6852a5fc",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux Notes.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,6 +146,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8386a33ebdcd27e9",
+  "active": "cdad34bbe6ca0304",
   "lastOpenFiles": []
 }
