@@ -1,0 +1,22 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[ExtractDialog]
+1920x1080 screen: Height=560
+1920x1080 screen: Width=1280
+DirHistory[$e]=$HOME/Downloads/here/
+
+[General]
+Version=202
+ViewPropsTimestamp=2023,12,19,13,33,17.377
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+Recent Files[$e]=file:$HOME,file:$HOME/Downloads/here
+Recent URLs[$e]=file:$HOME/Downloads/here/,file:$HOME/Downloads/
+iconViewIconSize=64
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
