@@ -1,0 +1,4 @@
+# mounting internal hardrives ## add nofail parameter if its an external hardrive
+# /dev/sdb
+UUID=90570932-0e35-4f35-a040-7baddaeb40cb	/media/ani	ext4	defaults	0	0
+UUID=318f9473-aff6-4ac0-a40e-fb7f8808787b	/media/neko	ext4	defaults	0	0
