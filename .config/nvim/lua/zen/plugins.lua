@@ -23,6 +23,7 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
+    use 'stevearc/dressing.nvim'
 
     -- fuzzy finder
     use {
@@ -34,7 +35,6 @@ return require('packer').startup(function(use)
     -- syntax highlighting
     use {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate',
         config = function() require('zen.plugins.treesitter') end
     }
 
@@ -68,30 +68,6 @@ return require('packer').startup(function(use)
         opt = true,
         cmd = { 'ZenMode' },
         config = function() require('zen.plugins.zen-mode') end
-    }
-
-    -- lsp
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        requires = {
-            -- LSP support
-            { 'neovim/nvim-lspconfig' },
-            { 'williamboman/mason.nvim' },
-            { 'williamboman/mason-lspconfig.nvim' },
-
-            -- autocompletion
-            { 'hrsh7th/nvim-cmp' },
-            { 'hrsh7th/cmp-buffer' },
-            { 'hrsh7th/cmp-path' },
-            { 'saadparwaiz1/cmp_luasnip' },
-            { 'hrsh7th/cmp-nvim-lsp' },
-            { 'hrsh7th/cmp-nvim-lua' },
-
-            -- snippets
-            { 'L3MON4D3/LuaSnip' },
-            { 'rafamadriz/friendly-snippets' },
-        },
-        config = function() require('zen.plugins.lsp') end
     }
 
     -- automatically set up the configuration after cloning packer.nvim
