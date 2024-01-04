@@ -1,0 +1,25 @@
+import = ["/home/zen/.config/alacritty/catppuccin-mocha.toml"]
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 9
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.9
