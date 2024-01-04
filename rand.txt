@@ -17,4 +17,4 @@
 	Kernel driver in use: i915
 	Kernel modules: i915
 
-lspci -k | grep -A 2 -E (VGA|3D)
+lspci -k | grep -A 2 -E "(VGA|3D)"
