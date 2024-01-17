@@ -1,0 +1,9 @@
+## add it to the already existing vs code settings json file 
+
+"powermode.enabled": true,
+"powermode.presets": "exploding-rift",
+"powermode.explosion.size": 6,
+"powermode.explosions.duration": 30,
+powermode.combo.counterEnabled": "hide",
+"powermode.shake.enabled": false,
+"window.zoomlevel": 3,
