@@ -1,6 +1,6 @@
 {
     "explorer.confirmDelete": false,
-    "editor.cursorBlinking": "smooth",
+    "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "terminal.integrated.focusAfterRun": "terminal",
     "workbench.colorTheme": "Mayukai Reversal",
