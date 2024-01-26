@@ -20,6 +20,6 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 ZSH_THEME_RUBY_PROMPT_PREFIX="%{$fg[green]%}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 
-NEWLINE=$'\n'
-PROMPT="${user} ${pwd}${NEWLINE}ζ >> "
+PROMPT="${user} ${pwd}
+ζ >> "
 RPROMPT="${return_code} ${git_branch} \$(ruby_prompt_info)"
