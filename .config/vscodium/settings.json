@@ -1,9 +1,18 @@
-## add it to the already existing vs code settings json file 
+{
+    "explorer.confirmDelete": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.focusAfterRun": "terminal",
+    "workbench.colorTheme": "Mayukai Reversal",
+    "editor.fontSize": 15,
 
-"powermode.enabled": true,
-"powermode.presets": "exploding-rift",
-"powermode.explosion.size": 6,
-"powermode.explosions.duration": 30,
-powermode.combo.counterEnabled": "hide",
-"powermode.shake.enabled": false,
-"window.zoomlevel": 3,
+    // power mode settings
+    "powermode.enabled": true,
+    "powermode.presets": "exploding-rift",
+    "powermode.explosions.size": 6,
+    "powermode.explosions.duration": 30,
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.shake.enabled": false,
+    "code-runner.runInTerminal": true,
+
+}
