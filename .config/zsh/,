@@ -14,7 +14,7 @@ alias shutdown="shopt -q login_shell && logout || qdbus org.kde.ksmserver /KSMSe
 alias restartplasma="kquitapp5 plasmashell && kstart5 plasmashell"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
-
+alias list="/media/ani/docs/to_do.txt"
 # plugins
 source ~/.config/zsh/.zsh/zsh-autosuggestions.zsh
 source ~/.config/zsh/.zsh/zsh-history-substring-search.zsh
