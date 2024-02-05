@@ -4,15 +4,12 @@ import = ["/home/zen/.config/alacritty/catppuccin-mocha.toml"]
 TERM = "alacritty"
 
 [font]
-size = 9
+size = 11
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
 key = "Return"
 mods = "Super|Shift"
-
-[mouse]
-hide_when_typing = true
 
 [scrolling]
 history = 10000
