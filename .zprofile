@@ -1,1 +1,1 @@
-/home/zen/tmpdotfiles/.config/shell/profile
+/home/zen/.config/shell/profile
