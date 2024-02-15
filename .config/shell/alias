@@ -6,4 +6,4 @@ alias restartplasma="kquitapp5 plasmashell && kstart5 plasmashell"
 alias pacman="sudo pacman -S"
 alias sys="sudo systemctl"
 alias list="nvim /media/ani/docs/to_do.txt"
-
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
