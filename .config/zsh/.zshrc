@@ -3,7 +3,11 @@
 export ZSH="$HOME/.config/zsh/oh-my-zsh"
 ZSH_THEME="alanpeabody"
 
-plugins=(git)
+plugins=(
+    git
+    zsh-history-substring-search
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 source "$XDG_CONFIG_HOME/shell/alias"
