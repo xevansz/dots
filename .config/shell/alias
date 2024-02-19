@@ -1,9 +1,23 @@
-# My alias
-alias zshconf="nvim ~/.zshrc"
-alias logout="shopt -q login_shell && logout || qdbus org.kde.ksmserver /KSMServer logout 0 0 1"
-alias shutdown="shopt -q login_shell && logout || qdbus org.kde.ksmserver /KSMServer logout 1 2 1"
-alias restartplasma="kquitapp5 plasmashell && kstart5 plasmashell"
+
+# Sys alias
+alias zshconf="nvim ~/.config/zsh/.zshrc"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
+alias rm="rm -r"
+
+# My alias
 alias list="nvim /media/ani/docs/to_do.txt"
+alias pwd="pwd && pwd | xclip -sel clipboard"
+alias v="nvim"
+alias ls="exa -aG --color=always --icons --group-directories-first"
+alias la="exa -a --color=always --icons --group-directories-first"
+
+# git
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ga="git add"
+alias gm="git commit -m"
+alias gp="git push"
+alias ds="dots status"
+alias da="dots add"
+alias dm="dots commit -m"
+alias dp="dots push"
