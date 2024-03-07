@@ -3,12 +3,12 @@
 alias zshconf="nvim ~/.config/zsh/.zshrc"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
-alias rm="rm -r"
+alias r="rm -r"
 
 # My alias
 alias list="nvim /media/ani/docs/to_do.txt"
 alias pwd="pwd && pwd | xclip -sel clipboard"
-alias v="nvim"
+alias nv="nvim"
 alias ls="exa -aG --color=always --icons --group-directories-first"
 alias la="exa -a --color=always --icons --group-directories-first"
 
