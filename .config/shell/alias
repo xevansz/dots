@@ -3,7 +3,7 @@
 alias zshconf="nvim ~/.config/zsh/.zshrc"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
-alias r="rm -r"
+alias r="rm -rf"
 
 # My alias
 alias list="nvim /media/ani/docs/to_do.txt"
@@ -11,7 +11,7 @@ alias pwd="pwd && pwd | xclip -sel clipboard"
 alias nv="nvim"
 alias ls="exa -aG --color=always --icons --group-directories-first"
 alias la="exa -a --color=always --icons --group-directories-first"
-
+alias hss="hugo server --noHTTPCache"
 # git
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ga="git add"
