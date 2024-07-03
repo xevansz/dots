@@ -7,7 +7,7 @@ Install oh my zsh first.
 ```
  git init --bare $HOME/dotfiles
  git clone https://github.com/xevansz/dots tmpdotfiles
- rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME
+ rsync --recursive --verbose --exclude={'.git', 'README.md'} tmpdotfiles/ $HOME
  rm -r tmpdotfiles
 
  ln -s ~/.config/shell/profile  .zprofile
