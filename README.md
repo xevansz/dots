@@ -1,5 +1,6 @@
 # dotfiles
 A better $HOME, for me.
+Install oh my zsh first.
 
 # Making the repo
 
@@ -11,6 +12,7 @@ A better $HOME, for me.
 
  ln -s ~/.config/shell/profile  .zprofile
  rm ~/.zshrc ~/.zsh_history
+ rm ~/.oh-my-zsh
 
  alias dots='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 ```
