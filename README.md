@@ -10,7 +10,7 @@ Install oh my zsh first.
  rsync --recursive --verbose --exclude={'.git', 'README.md'} tmpdotfiles/ $HOME
  rm -r tmpdotfiles
 
- ln -s ~/.config/shell/profile  .zprofile
+ ln -s ~/.config/zsh/.zshrc .zshrc
  rm ~/.zshrc ~/.zsh_history
  rm ~/.oh-my-zsh
 
