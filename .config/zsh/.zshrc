@@ -10,7 +10,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source "$XDG_CONFIG_HOME/shell/alias"
+source "$XDG_CONFIG_HOME/.config/shell/alias"
 
 # plugins
 # source ~/.config/zsh/.zsh/zsh-autosuggestions.zsh
