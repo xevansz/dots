@@ -16,8 +16,8 @@ Install oh my zsh first.
 
  alias dots='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
  
- git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.config/zsh/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.config/zsh/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
 
 ```
 
