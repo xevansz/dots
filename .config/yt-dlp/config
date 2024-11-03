@@ -1,0 +1,23 @@
+# Save all videos here
+
+--paths "~/Videos"
+
+
+# download in mp4 formart
+
+-f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"
+
+
+# Do not overwrite existing output files
+
+--no-overwrites
+
+
+#Video format code
+
+--format bestvideo*+bestaudio/best
+
+
+Write subtitle file
+
+--write-subs
