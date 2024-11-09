@@ -31,3 +31,4 @@ dots status
 ```
 # To-do 
 move custom zeta theme to themes and delete everthing in the themes folder
+yt-dlp -x --audio-format mp3 --audio-quality 0 yt-dlp folder deleted check yt-dlp config
