@@ -4,8 +4,6 @@ ZSH_THEME="zeta"
 
 plugins=(
     git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     command-not-found
     colored-man-pages
 )
