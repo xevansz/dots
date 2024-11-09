@@ -29,5 +29,5 @@ dots config --local status.showUntrackedFiles no
 dots remote add origin https://github.com/xevansz/dots
 dots status
 ```
-# TO-do 
+# To-do 
 move custom zeta theme to themes and delete everthing in the themes folder
