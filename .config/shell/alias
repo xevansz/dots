@@ -16,10 +16,3 @@ alias hss="hugo server --noHTTPCache"
 
 # git
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ga="git add"
-alias gm="git commit -m"
-alias gp="git push"
-alias ds="dots status"
-alias da="dots add"
-alias dm="dots commit -m"
-alias dp="dots push"
