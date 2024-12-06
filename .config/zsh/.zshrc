@@ -1,5 +1,6 @@
 # oh my zsh and plugins
 export ZSH="$HOME/.config/zsh/.oh-my-zsh"
+export PATH="$HOME/.local/bin:$PATH"
 figlet Supriya
 ZSH_THEME="zeta"
 
