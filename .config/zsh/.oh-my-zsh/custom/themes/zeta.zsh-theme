@@ -1,7 +1,8 @@
 # Zeta theme for oh-my-zsh
 # Tested on Linux, Unix and Windows under ANSI colors.
 # Copyright: Skyler Lee, 2015
-# added some stuff - cr0w
+# added some stuff - evans
+
 # Colors: black|red|blue|green|yellow|magenta|cyan|white
 local black=$fg[black]
 local red=$fg[red]
@@ -23,8 +24,7 @@ local white_bold=$fg_bold[white]
 
 local highlight_bg=$bg[red]
 
-#local zeta='ζ ››'
-local zeta='ξ ››'
+local zeta='ζ ➤'
 
 # Machine name.
 function get_box_name {
@@ -37,7 +37,7 @@ function get_box_name {
 
 # User name.
 function get_usr_name {
-    local name="%n"
+    local name="suppi"  #"%n"
     if [[ "$USER" == 'root' ]]; then
         name="%{$highlight_bg%}%{$white_bold%}$name%{$reset_color%}"
     fi
@@ -95,17 +95,16 @@ function get_space {
     echo $space
 }
 
-# Prompt: # USER@MACHINE: DIRECTORY <BRANCH [STATUS]> --- (TIME_STAMP)
+# Prompt: USER MACHINE DIRECTORY <BRANCH [STATUS]> --- (TIME_STAMP)
 # > command
 function print_prompt_head {
     local left_prompt="\
 %{$green_bold%}$(get_usr_name)\
-%{$blue%}@\
-%{$cyan_bold%}$(get_box_name): \
+%{$blue%} \
+%{$cyan_bold%}$(get_box_name) \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%}\
 $(get_git_prompt) "
-    # local right_prompt="%{$blue%}($(get_time_stamp))%{$reset_color%} "
-    print -rP "$left_prompt$(get_space $left_prompt $right_prompt)$right_prompt"
+    print -rP "$left_prompt"
 }
 
 function get_prompt_indicator {
