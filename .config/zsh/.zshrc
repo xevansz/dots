@@ -2,7 +2,7 @@
 export ZSH="$HOME/.config/zsh/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 figlet Supriya
-ZSH_THEME="zeta"
+ZSH_THEME="aguile"
 
 plugins=(
     git
