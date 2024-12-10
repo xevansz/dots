@@ -6,6 +6,11 @@
 local highlight_bg=$bg[red]
 local magenta_bold=$fg_bold[magenta]
 local white_bold=$fg_bold[white]
+local yellow_bold=$fg_bold[yellow]
+local blue=$fg[blue]
+local cyan_bold=$fg_bold[cyan]
+local green_bold=$fg_bold[green]
+
 local zen='ζ ➤'
 
 function get_usr_name {
@@ -40,20 +45,16 @@ local ret_status="%{$magenta_bold%}$zen %{$reset_color%}"
 
 # prompt format: \n USER MACHINE DIRECTORY \n STATUS
 function print_prompt_head {
-    local left_prompt="%{$magenta_bold%}$(get_usr_name)\
-%{$reset_color%}\
-%{$fg[255]%} \
-$(box_name)\
-%{$reset_color%} \
-%{$magenta_bold%}$(get_current_dir) \
-%{$reset_color%}\
-$(git_branch)\
-%{$reset_color%}"
-    print -rP "$left_prompt"
+    local prompt="%{$green_bold%}$(get_usr_name)\
+%{$blue%}@\
+%{$cyan_bold%}$(box_name) \
+%{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
+$(git_branch)"
+    print -rP "$prompt"
 }
 
 autoload -U add-zsh-hook
 add-zsh-hook precmd print_prompt_head
 setopt prompt_subst
 
-PROMPT='${ret_status}%{$reset_color%}'
+PROMPT='${ret_status}'
