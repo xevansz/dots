@@ -16,7 +16,10 @@ local packer_bootstrap = ensure_packer()
 -- autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd([[
   augroup packer_user_config
+  augroup HighlightCursorLineNr
     autocmd!
+    autocmd ColorScheme * hi clear CursorLine
+    autocmd ColorScheme * highlight CursorLineNr cterm=bold ctermbg=NONE ctermfg=Red
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]])
@@ -44,6 +47,9 @@ return require('packer').startup(function(use)
         as = "catppuccin",
         config = function() require('zen.plugins.theme') end
     }
+
+    -- pywal colors
+    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
     -- fancier status bar
     use {
