@@ -8,6 +8,7 @@ local magenta_bold=$fg_bold[magenta]
 local white_bold=$fg_bold[white]
 local yellow_bold=$fg_bold[yellow]
 local blue=$fg[blue]
+local blue_bold=$fg_bold[blue]
 local cyan_bold=$fg_bold[cyan]
 local green_bold=$fg_bold[green]
 
@@ -47,7 +48,8 @@ local ret_status="%{$magenta_bold%}$zen %{$reset_color%}"
 function print_prompt_head {
     local prompt="%{$green_bold%}$(get_usr_name)\
 %{$blue%}@\
-%{$cyan_bold%}$(box_name) \
+%{$cyan_bold%}$(box_name)\
+%{$blue_bold%}:: \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
 $(git_branch)"
     print -rP "$prompt"
