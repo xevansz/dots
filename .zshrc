@@ -1,1 +1,0 @@
-/home/aguile/.config/zsh/.zshrc
