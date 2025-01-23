@@ -21,15 +21,6 @@ compinit
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
-# Alternate linedrawing character set
-autoload -Uz add-zsh-hook
-
-function reset_broken_terminal () {
-	printf '%b' '\e[0m\e(B\e)0\017\e[?5l\e7\e[0;0r\e8'
-}
-
-add-zsh-hook -Uz precmd reset_broken_terminal
-
 # auto rehash
 zshcache_time="$(date +%s%N)"
 
@@ -46,10 +37,3 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
-
-# fzf
-eval "$(fzf --zsh)"
-
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix"
-export FZF_DEFAULT_OPTS="--height 50% --layout=default"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
