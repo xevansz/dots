@@ -16,10 +16,10 @@ dots config --local status.showUntrackedFiles no
 
 # zshrc
 
-do this before installing omz
+install omz and zsh before using config
 ```
 rm ~/.zshrc ~/.zsh_history
-ln -s ~/.config/zsh/.zshrc .zshrc
+mv .oh-my-zsh .config/zsh/.oh-my-zsh
 ```
 
 # adding plugins
@@ -28,5 +28,5 @@ yay -S zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 # finishing up
-- after installing oh my zsh move custom zeta theme to themes
+- move custom themes to .oh-my-zsh
 - yt-dlp -x --audio-format mp3 --audio-quality 0 yt-dlp folder deleted check yt-dlp config
