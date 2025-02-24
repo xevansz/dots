@@ -1,0 +1,1 @@
+/home/suppi/.config/shell/profile
