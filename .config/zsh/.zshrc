@@ -42,3 +42,4 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
