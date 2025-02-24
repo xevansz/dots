@@ -1,7 +1,11 @@
+LIVE_COUNTER=$(ps a | awk '{print $2}' | grep -vi "tty*" | uniq | wc -l);
+if [ $LIVE_COUNTER -eq 1 ]; then
+     fastfetch
+fi
+
 # oh my zsh and plugins
 export ZSH="$HOME/.config/zsh/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
-figlet Supriya
 ZSH_THEME="aguile"
 
 plugins=(
