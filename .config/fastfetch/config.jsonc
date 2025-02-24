@@ -12,7 +12,8 @@
         "type": "kitty",
         "height": 14,
         "padding": {
-            "top": 1
+            "top": 1,
+            "left":2
         }
     },
     "display": {
