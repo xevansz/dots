@@ -14,5 +14,6 @@
     "powermode.combo.counterEnabled": "hide",
     "powermode.shake.enabled": false,
     "code-runner.runInTerminal": true,
-
+    "editor.fontFamily": "'Iosevka', 'monospace', monospace",
+    "powermode.combo.location": "off"
 }
