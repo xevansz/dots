@@ -12,11 +12,11 @@ yay -Qdtq | yay -Rns -
 
 echo "Clearing ~/.cache"
 home_cache_used="$(du -sh ~/.cache)"
-rm -rf ~/.cache/
+sudo rm -rf ~/.cache/
 echo "Spaced saved: $home_cache_used"
 
 echo "Clearing system logs"
-journalctl --vacuum-time=7d
+sudo ournalctl --vacuum-time=7d
 
 
 
