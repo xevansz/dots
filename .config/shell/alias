@@ -16,3 +16,9 @@ alias hss="hugo server --noHTTPCache"
 
 # git
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+
+# youtube
+alias ytdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader aria2c"
+alias ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader aria2c"
+alias ytvdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader aria2c"
+alias ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader aria2c"
