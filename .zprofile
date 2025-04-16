@@ -1,1 +1,1 @@
-/home/suppi/.config/shell/profile
+/home/evans/.config/shell/profile
