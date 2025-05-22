@@ -1,13 +1,11 @@
-# fastfetch in new terminal instance
-LIVE_COUNTER=$(ps a | awk '{print $2}' | grep -vi "tty*" | uniq | wc -l);
-if [ $LIVE_COUNTER -eq 1 ]; then
-#     fastfetch
-fi
+# load modules
+autoload -Uz compinit add-zsh-hook
 
 # oh my zsh and plugins
 export ZSH="$HOME/.config/zsh/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 ZSH_THEME="aguile"
+source $ZSH/oh-my-zsh.sh
 
 plugins=(
     git
@@ -15,21 +13,18 @@ plugins=(
     colored-man-pages
 )
 
-source $ZSH/oh-my-zsh.sh
+# alias and plugins
 source "$HOME/.config/shell/alias"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# autocomplete
-autoload -Uz compinit
-compinit
+# completion setup
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
 # auto rehash
 zshcache_time="$(date +%s%N)"
-
-autoload -Uz add-zsh-hook
 
 rehash_precmd() {
   if [[ -a /var/cache/zsh/pacman ]]; then
@@ -42,7 +37,6 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

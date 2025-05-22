@@ -1,6 +1,8 @@
-# aguile theme for oh-my-zsh
-# I did not test on any other machines except mine
-# Copyright: evans, 2024 (need go get it. I don't know how)
+# aguile.zsh-theme
+# A clean, colorful ZSH theme for Oh My Zsh
+# Author: Evans <minithbmatthew@gmail.com>
+# License: MIT
+# Inspired by crow and simplicity
 
 # user colors
 local highlight_bg=$bg[red]
@@ -15,11 +17,12 @@ local green_bold=$fg_bold[green]
 local zen='ζ ➤'
 
 function get_usr_name {
-    local name="%n"  #"%n"
+    local name="%n"
     if [[ "$USER" == 'root' ]]; then
-        name="%{$highlight_bg%}%{$white_bold%}$name%{$reset_color%}"
+        echo "%{$highlight_bg%}%{$white_bold%}$name%{$reset_color%}"
+    else
+      echo "%{$green_bold%}$name%{$reset_color%}"
     fi
-    echo $name
 }
 
 # box name
@@ -34,10 +37,8 @@ function get_current_dir {
 
 # Git branch
 function git_branch {
-    git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-    if [ -n "$git_branch" ]; then
-        echo "<${git_branch}>"
-    fi
+    git_branch=$(command git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    [[ -n "$git_branch" ]] && echo "<${git_branch}>"
 }
 
 
@@ -55,7 +56,7 @@ $(git_branch)"
     print -rP "$prompt"
 }
 
-autoload -U add-zsh-hook
+autoload -Uz add-zsh-hook
 add-zsh-hook precmd print_prompt_head
 setopt prompt_subst
 
