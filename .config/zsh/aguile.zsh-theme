@@ -1,3 +1,14 @@
+# Git branch
+function git_branch {
+    git_branch=$(command git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    [[ -n "$git_branch" ]] && echo "<${git_branch}>"
+}
+
+# --- Minimal Style ---
+#export PS1=$'%n@%m: \e[0;36m%~\e[0m $(git_branch)\n$ '
+
+#return
+
 # aguile.zsh-theme
 # A clean, colorful ZSH theme for Oh My Zsh
 # Author: Evans <minithbmatthew@gmail.com>
@@ -14,7 +25,8 @@ local blue_bold=$fg_bold[blue]
 local cyan_bold=$fg_bold[cyan]
 local green_bold=$fg_bold[green]
 
-local zen='ζ ➤'
+#local zen='ζ ➤'
+local zen='ζ'
 
 function get_usr_name {
     local name="%n"
@@ -34,13 +46,6 @@ function box_name {
 function get_current_dir {
     echo "${PWD/#$HOME/~}"
 }
-
-# Git branch
-function git_branch {
-    git_branch=$(command git rev-parse --abbrev-ref HEAD 2>/dev/null)
-    [[ -n "$git_branch" ]] && echo "<${git_branch}>"
-}
-
 
 # return status
 local ret_status="%{$magenta_bold%}$zen %{$reset_color%}"
