@@ -1,5 +1,5 @@
 # Sys alias
-alias zshconf="nvim ~/.config/zsh/.zshrc"
+alias zconf="nvim ~/.config/zsh/.zshrc"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
 alias r="rm -rf"
@@ -12,7 +12,7 @@ alias eat-orphans="yay -Qtdq | yay -Rsu -"
 alias pwd="pwd && pwd | xclip -sel clipboard"
 alias ls="exa -aG --color=always --icons --group-directories-first"
 alias la="exa -a --color=always --icons --group-directories-first"
-alias hss="hugo server --noHTTPCache"
+alias vi="nvim"
 
 # git
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
