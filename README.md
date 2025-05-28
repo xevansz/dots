@@ -17,6 +17,7 @@ dots config --local status.showUntrackedFiles no
 # zshrc
 
 install omz and zsh before using config
+custom aguile theme in ~/.config/zsh
 ```
 rm ~/.zshrc ~/.zsh_history
 mv .oh-my-zsh .config/zsh/.oh-my-zsh
@@ -29,4 +30,3 @@ yay -S zsh-autosuggestions zsh-syntax-highlighting
 
 # finishing up
 - move custom themes to .oh-my-zsh
-- yt-dlp -x --audio-format mp3 --audio-quality 0 yt-dlp folder deleted check yt-dlp config
