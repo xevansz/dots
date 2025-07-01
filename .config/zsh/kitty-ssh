@@ -1,0 +1,2 @@
+sudo mkdir -p /usr/share/terminfo/x
+curl -o /usr/share/terminfo/x/xterm-kitty https://raw.githubusercontent.com/kovidgoyal/kitty/master/terminfo/x/xterm-kitty
