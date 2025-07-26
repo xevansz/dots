@@ -4,7 +4,7 @@ A better $HOME, for me.
 # setting up the dotfiles 
 
 ```
-git clone --seperate-git-dir=$HOME/.dots git@github.com:xevansz/dots.git tmpdir
+git clone --separate-git-dir=$HOME/.dots git@github.com:xevansz/dots.git tmpdir
 rsync --recursive --verbose --exclude '.git' tmpdir/ $HOME
 rm -r tmpdir
 ```
