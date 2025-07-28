@@ -1,9 +1,13 @@
 # load modules
 autoload -Uz compinit add-zsh-hook
 
-# oh my zsh and plugins
-export ZSH="$HOME/.config/zsh/.oh-my-zsh"
-export PATH="$HOME/.local/bin:$PATH"
+export ZSH="$HOME/.config/zsh/.oh-my-zsh" # ohmyzsh
+export PATH="$HOME/.local/bin:$PATH" # local script files and python packages
+export PATH="/usr/local/cuda-12.5/bin:$PATH" # cuda
+export LD_LIBRARY_PATH="/usr/local/cuda-12.5/lib64:$LD_LIBRARY_PATH" # cuda
+export CC=/usr/bin/gcc-12 # to use gcc 12 for nvcc and tf comppatibility
+export CXX=/usr/bin/g++-12
+
 ZSH_THEME="aguile"
 source $ZSH/oh-my-zsh.sh
 
@@ -37,6 +41,9 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
+
+# cowsay fortune coockie
+fortune | cowsay -f stegosaurus
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
