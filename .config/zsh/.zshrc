@@ -1,3 +1,4 @@
+# sys disable systemd-networkd-wait-online.service
 # load modules
 autoload -Uz compinit add-zsh-hook
 
@@ -43,7 +44,7 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 # cowsay fortune coockie
-fortune | cowsay -f stegosaurus
+misfortune | cowsay -f stegosaurus
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
