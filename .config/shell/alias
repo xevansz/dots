@@ -4,7 +4,7 @@ alias pacman="sudo pacman"
 alias sys="sudo systemctl"
 alias r="rm -rf"
 alias copy="xclip -sel clipboard"
-
+alias rp="yay -Rcns"
 # My alias
 alias fuck="sudo"
 alias yeet-orphans="yay -Qtdq | yay -Rns -"
