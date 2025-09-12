@@ -3,35 +3,78 @@
 #!/bin/bash
 set -e
 
-echo "Updating system"
+echo "🚀 Starting comprehensive system cleanup..."
+echo
+
+echo "📦 Updating system"
 yay -Syu --noconfirm
+echo
 
 echo
-echo " Clearing pacman cache"
+echo "🧹 Clearing pacman cache"
 before=$(du -sb /var/cache/pacman/pkg | cut -f1)
 paccache -rk1
+yay -Sc --noconfirm
 after=$(du -sb /var/cache/pacman/pkg | cut -f1)
 echo "Freed $(( (before-after)/1024/1024 )) MB"
+echo
 
 echo
-echo "Removing orphan packages"
+echo "👻Yeeting orphans"
 orphans=$(yay -Qdtq || true)
 if [ -n "$orphans" ]; then
     yay -Rns --noconfirm $orphans
+    echo "Orphans yeeted succesfully"
 else
-    echo "No orphan packages found."
+    echo "No orphans found."
 fi
+echo
+
+echo "🗑️ Cleaning AUR build cache"
+if [ -d ~/.cache/yay ]; then
+    before=$(du -sb ~/.cache/yay | cut -f1)
+    rm -rf ~/.cache/yay/*
+    after=$(du -sb ~/.cache/yay | cut -f1)
+    echo "Freed $(( (before-after)/1024/1024 )) MB from yay cache"
+fi
+echo
 
 echo
-echo "Clearing ~/.cache"
+echo "🧽 Clearing ~/.cache"
 before=$(du -sb ~/.cache | cut -f1)
-rm -rf ~/.cache/*
+for dir in ~/.cache/*/; do
+    if [[ -d "$dir" ]]; then
+        case $(basename "$dir") in
+            "fontconfig"|"mesa_shader_cache"|"nvidia")
+                # Keep these directories but clean old files
+                find "$dir" -type f -atime +7 -delete 2>/dev/null || true
+                ;;
+            *)
+                rm -rf "$dir"* 2>/dev/null || true
+                ;;
+        esac
+    fi
+done
 after=$(du -sb ~/.cache | cut -f1)
 echo "Freed $(( (before-after)/1024/1024 )) MB"
+echo
 
 echo
-echo "Cleaning system logs"
+echo "📝Cleaning system logs"
 sudo journalctl --vacuum-time=7d
+echo
+
+echo "🗂️ Cleaning persistent temporary files"
+sudo find /var/tmp -type f -atime +7 -delete 2>/dev/null || true
+echo
+
+echo "📊 Final system status"
+echo "Disk usage:"
+df -h / /home 2>/dev/null || df -h /
+echo
+echo "Memory usage:"
+free -h
+echo
 
 echo
 echo "Cleanup complete "
