@@ -11,3 +11,7 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export ZDOTDIR="$HOME/.config/zsh"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
