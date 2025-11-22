@@ -5,9 +5,9 @@ function git_branch {
 }
 
 # --- Minimal Style ---
-#export PS1=$'%n@%m: \e[0;36m%~\e[0m $(git_branch)\n$ '
+export PS1=$'%n@%m \e[0;36m%~\e[0m $(git_branch)\nζ '
 
-#return
+return
 
 # aguile.zsh-theme
 # A clean, colorful ZSH theme for Oh My Zsh
@@ -25,8 +25,8 @@ local blue_bold=$fg_bold[blue]
 local cyan_bold=$fg_bold[cyan]
 local green_bold=$fg_bold[green]
 
-#local zen='ζ ➤'
-local zen='λ' 
+local zen='ζ ➤'
+#local zen='λ'
 #local zen='ζ'
 
 function get_usr_name {
@@ -56,7 +56,7 @@ function print_prompt_head {
     local prompt="%{$green_bold%}$(get_usr_name)\
 %{$blue%}@\
 %{$cyan_bold%}$(box_name)\
-%{$blue_bold%}: \
+%{$blue_bold%} \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
 $(git_branch)"
     print -rP "$prompt"
