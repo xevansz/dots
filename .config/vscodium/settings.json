@@ -1,9 +1,10 @@
 {
+    "workbench.colorTheme": "Tokyo Night",
+    /* Mayukai reversal */
     "explorer.confirmDelete": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "terminal.integrated.focusAfterRun": "terminal",
-    "workbench.colorTheme": "Mayukai Reversal",
     "editor.fontSize": 15,
     "editor.fontLigatures": "'calt'",
     "editor.tabSize": 2,
@@ -25,6 +26,5 @@
     "code-runner.runInTerminal": true,
     "editor.fontFamily": "'Iosevka', 'monospace', monospace",
     "powermode.combo.location": "off",
-    "workbench.startupEditor": "none",
-    "workbench.productIconTheme": "bongocat"
+    "workbench.startupEditor": "none"
 }
