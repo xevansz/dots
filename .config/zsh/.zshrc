@@ -44,7 +44,7 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 # cowsay fortune coockie
-fortune | cowsay -f stegosaurus
+#fortune | cowsay -f stegosaurus
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
