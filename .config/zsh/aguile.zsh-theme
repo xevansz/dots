@@ -5,7 +5,7 @@ function git_branch {
 }
 
 # --- Minimal Style ---
-export PS1=$'%n@%m \e[0;36m%~\e[0m $(git_branch)\nζ '
+export PS1=$'[%n@%m \e[0;36m%~\e[0m $(git_branch)]ζ '
 
 return
 
