@@ -22,3 +22,6 @@ alias ytdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-down
 alias ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader aria2c"
 alias ytvdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader aria2c"
 alias ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader aria2c"
+
+# grub
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
