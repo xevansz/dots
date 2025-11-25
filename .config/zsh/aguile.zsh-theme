@@ -5,7 +5,7 @@ function git_branch {
 }
 
 # --- Minimal Style ---
-export PS1=$'[%n@%m \e[0;36m%~\e[0m$(git_branch)]ζ '
+export PS1=$'[%n@%m \e[0;36m%~\e[0m$(git_branch)]\nζ '
 
 return
 
@@ -53,12 +53,12 @@ local ret_status="%{$magenta_bold%}$zen %{$reset_color%}"
 
 # prompt format: \n USER MACHINE DIRECTORY \n STATUS
 function print_prompt_head {
-    local prompt="%{$green_bold%}$(get_usr_name)\
+    local prompt="[%{$green_bold%}$(get_usr_name)\
 %{$blue%}@\
 %{$cyan_bold%}$(box_name)\
 %{$blue_bold%} \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
-$(git_branch)"
+$(git_branch)]"
     print -rP "$prompt"
 }
 
