@@ -49,7 +49,7 @@ return require('packer').startup(function(use)
     }
 
     -- pywal colors
-    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+--    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
     -- fancier status bar
     use {
