@@ -113,11 +113,6 @@ _G.packer_plugins = {
     path = "/home/nordic/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  pywal = {
-    loaded = true,
-    path = "/home/nordic/.local/share/nvim/site/pack/packer/start/pywal",
-    url = "https://github.com/AlphaTechnolog/pywal.nvim"
-  },
   ["telescope.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26zen.plugins.telescope\frequire\0" },
     loaded = true,
@@ -142,30 +137,30 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.lualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.alpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26zen.plugins.telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
 -- Config for: vimwiki
 time([[Config for vimwiki]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.vimwiki\frequire\0", "config", "vimwiki")
 time([[Config for vimwiki]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.theme\frequire\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\27zen.plugins.treesitter\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26zen.plugins.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.alpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.theme\frequire\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.lualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
