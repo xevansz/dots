@@ -1,7 +1,7 @@
 require('lualine').setup {
     options = {
         icons_enabled = false,
-        theme = 'pywal-nvim',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
     },

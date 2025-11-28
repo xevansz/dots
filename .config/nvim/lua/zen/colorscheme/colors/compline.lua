@@ -1,2 +1,6 @@
--- ~/.config/nvim/colors/mycolors.lua
-require('compline.theme').setup()
+-- Compline colorscheme
+-- This file is loaded when you run :colorscheme compline
+local theme = require('zen.colorscheme.compline.theme')
+
+-- Setup the colorscheme
+theme.setup()
