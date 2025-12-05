@@ -1,0 +1,10 @@
+# Host-specific packages for huaiqing
+# huaiqing
+
+description: Packages specific to huaiqing
+
+# Packages to install only on this host
+packages: []
+
+# Packages to exclude from base or modules on this host
+exclude: []

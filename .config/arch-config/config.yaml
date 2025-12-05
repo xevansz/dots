@@ -1,0 +1,18 @@
+# Main configuration for dcli declarative package management
+# Edit this file to customize your system configuration
+
+# Hostname of this machine
+host: huaiqing
+
+# List of enabled modules
+# Enable modules with: dcli module enable <module-name>
+enabled_modules: []
+
+# Additional packages not in any module
+additional_packages: []
+
+# Automatically remove unmanaged packages during sync
+auto_prune: true
+
+# Flatpak installation scope: "user" (default) or "system"
+flatpak_scope: user

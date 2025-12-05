@@ -1,0 +1,26 @@
+# Base packages installed on all systems
+# These packages are included regardless of host or modules
+
+description: Base system packages
+
+packages:
+  # Essential base system
+  - base
+  - base-devel
+  - nvidia-open
+  - cuda
+
+  # Kernel (uncomment the one you use)
+  # - linux              # Standard kernel
+  - linux-zen          # Zen kernel (optimized for desktop)
+  - linux-zen-headers          # Long-term support kernel
+  # - linux-hardened     # Security-focused kernel
+
+  # Firmware (usually needed)
+  # - linux-firmware
+
+  # Basic tools (uncomment as needed)
+  # - git
+  # - vim
+  # - neovim
+  - btop
