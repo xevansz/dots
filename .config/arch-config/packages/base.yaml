@@ -7,13 +7,13 @@ packages:
   # Essential base system
   - base
   - base-devel
-  - nvidia-open
   - cuda
 
   # Kernel (uncomment the one you use)
   # - linux              # Standard kernel
   - linux-zen          # Zen kernel (optimized for desktop)
-  - linux-zen-headers          # Long-term support kernel
+  - linux-zen-headers
+  - nvidia-open-dkms# Long-term support kernel
   # - linux-hardened     # Security-focused kernel
 
   # Firmware (usually needed)
@@ -23,4 +23,24 @@ packages:
   # - git
   # - vim
   # - neovim
-  - btop
+  - btop 
+  - freedownloadmanager
+  - keepassxc
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+  - zsh
+  - zed
+  - zoom
+  - waterfox
+  - windsurf
+  - xdg-ninja
+  - vscodium-bin
+  - obsidian
+  - libreoffice-still
+  - ttf-iosevka
+  - ttf-atkinson-hyperlegible-next
+  - python-pywal
+  - python-pdm
+  - brave-bin
+  - docker
+  - docker-compose

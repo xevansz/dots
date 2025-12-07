@@ -1,0 +1,10 @@
+description: Editing to0ls
+
+# List of packages in this module
+packages: [] # gimp and inkstone add it
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: ""

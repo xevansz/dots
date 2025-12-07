@@ -12,7 +12,7 @@ enabled_modules: []
 additional_packages: []
 
 # Automatically remove unmanaged packages during sync
-auto_prune: true
+auto_prune: false
 
 # Flatpak installation scope: "user" (default) or "system"
 flatpak_scope: user
