@@ -43,6 +43,10 @@ rehash_precmd() {
 
 add-zsh-hook -Uz precmd rehash_precmd
 
+# history settings
+HISTSIZE=5000
+SAVEHIST=5000
+
 # main opts
 setopt append_history inc_append_history share_history
 setopt auto_menu menu_complete
