@@ -20,7 +20,7 @@ mkdir -p "$HOME/.local/state/zsh"
 mkdir -p "$HOME/.local/share/gnupg"
 ```
 
-# theme
+## theme
 - colors - Everforest, compline
 - fonts - iosevka and atkinson hyperlegible
 - icons - Colloid icon theme purple
