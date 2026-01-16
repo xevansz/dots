@@ -15,7 +15,7 @@ yay -S zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 ## creating folders
-`mkdir -p "$HOME/.local/state/zsh"'
+`mkdir -p "$HOME/.local/state/zsh"'  
 `mkdir -p "$HOME/.local/share/gnupg"`
 
 # theme
