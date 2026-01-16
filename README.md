@@ -25,3 +25,4 @@ mkdir -p "$HOME/.local/share/gnupg"
 - fonts - iosevka and atkinson hyperlegible
 - icons - Colloid icon theme purple
 - theme - nothing or sweet
+Backed up using konsave
