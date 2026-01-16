@@ -24,5 +24,5 @@ mkdir -p "$HOME/.local/share/gnupg"
 - colors - Everforest, compline
 - fonts - iosevka and atkinson hyperlegible
 - icons - Colloid icon theme purple
-- theme - nothing or sweet
+- theme - nothing or sweet  
 Backed up using konsave
