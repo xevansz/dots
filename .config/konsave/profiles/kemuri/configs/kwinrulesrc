@@ -1,0 +1,12 @@
+[053ac4a2-6e49-4e36-92ad-a98d1e802ea1]
+Description=Dock transparency
+opacityactive=48
+opacityactiverule=2
+opacityinactive=47
+opacityinactiverule=2
+types=4
+wmclassmatch=1
+
+[General]
+count=1
+rules=053ac4a2-6e49-4e36-92ad-a98d1e802ea1

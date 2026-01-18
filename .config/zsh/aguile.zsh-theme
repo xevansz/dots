@@ -5,7 +5,7 @@ function git_branch {
 }
 
 # --- Minimal Style ---
-export PS1=$'[%n@%m \e[0;36m%~\e[0m$(git_branch)]\nζ '
+export PS1=$'[\e[0;33m%n\e[0m@\e[0;34m%m\e[0m \e[0;36m%~\e[0m$(git_branch)]\nζ '
 
 return
 
@@ -27,7 +27,6 @@ local green_bold=$fg_bold[green]
 
 local zen='ζ ➤'
 #local zen='λ'
-#local zen='ζ'
 
 function get_usr_name {
     local name="%n"

@@ -1,0 +1,25 @@
+[General]
+Days Meta Infos=30
+PinnedDocuments=
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Show Url Nav Bar=true
+
+[MainWindow]
+1920x1080 screen: Height=1009
+1920x1080 screen: Width=952
+2 screens: Window-Maximized=true
+
+[filetree]
+editShade=72,53,117
+listMode=false
+middleClickToClose=false
+shadingEnabled=true
+showCloseButton=false
+showFullPathOnRoots=false
+showToolbar=true
+sortRole=0
+viewShade=56,81,113
