@@ -44,11 +44,15 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 # history settings
+export HISTFILE="$HOME/.local/state/zsh/history"
+
 HISTSIZE=5000
 SAVEHIST=5000
 
+mkdir -p "$(dirname "$HISTFILE")"
+
 # main opts
-setopt append_history inc_append_history share_history
+setopt append_history inc_append_history share_history extended_history
 setopt auto_menu menu_complete
 setopt auto_param_slash
 setopt dot_glob
