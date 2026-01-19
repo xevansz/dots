@@ -4,7 +4,7 @@
 # License: MIT
 # Inspired by crow and simplicity
 
-autoload -Uz add-zsh-hook colors vcs_info
+autoload -Uz add-zsh-hook colors
 colors
 
 setopt prompt_subst
@@ -23,10 +23,11 @@ local zen='ζ ➤'
 #local zen='λ'
 
 # git
-zstyle ':vcs_info:git:*' formats '<%b>'
-zstyle ':vcs_info:*' enable git
-
-add-zsh-hook precmd vcs_info
+git_branch() {
+  local branch
+  branch=$(command git symbolic-ref --quiet --short HEAD 2>/dev/null) || return
+  print "<$branch>"
+}
 
 # helpers
 get_usr_name() {
@@ -54,7 +55,7 @@ print_prompt_head() {
 %{$cyan_bold%}$(box_name)\
 %{$blue_bold%} \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
-${vcs_info_msg_0_}]"
+$(git_branch)]"
 }
 
 add-zsh-hook precmd print_prompt_head
