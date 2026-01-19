@@ -1,22 +1,25 @@
 # sys disable systemd-networkd-wait-online.service
 # load modules
-autoload -Uz compinit add-zsh-hook
+autoload -Uz add-zsh-hook
 
 export ZSH="$HOME/.config/zsh/.oh-my-zsh" # ohmyzsh
 export PATH="$HOME/.local/bin:$PATH" # local script files and python packages
-export PATH="/usr/local/cuda-12.5/bin:$PATH" # cuda
-export LD_LIBRARY_PATH="/usr/local/cuda-12.5/lib64:$LD_LIBRARY_PATH" # cuda
+export PATH="/opt/cuda/bin:$PATH" # cuda
+export LD_LIBRARY_PATH="/opt/cuda/lib64:$LD_LIBRARY_PATH" # cuda
 export CC=/usr/bin/gcc # to use gcc 12 for nvcc and tf comppatibility
 export CXX=/usr/bin/g++ # replace gcc with gcc-12, same for g++ -> g++-12
 
+zstyle ':omz:update' mode disabled
+
 ZSH_THEME="aguile"
-source $ZSH/oh-my-zsh.sh
 
 plugins=(
-    git
+#    git  - I am not using omz alias anymore
     command-not-found
     colored-man-pages
 )
+
+source $ZSH/oh-my-zsh.sh
 
 # alias and plugins
 source "$HOME/.config/shell/alias"
@@ -24,13 +27,11 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # completion setup
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
 # auto rehash
 zshcache_time="$(date +%s%N)"
-
 rehash_precmd() {
   if [[ -a /var/cache/zsh/pacman ]]; then
     local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
@@ -40,15 +41,12 @@ rehash_precmd() {
     fi
   fi
 }
-
 add-zsh-hook -Uz precmd rehash_precmd
 
 # history settings
 export HISTFILE="$HOME/.local/state/zsh/history"
-
 HISTSIZE=5000
 SAVEHIST=5000
-
 mkdir -p "$(dirname "$HISTFILE")"
 
 # main opts
@@ -58,7 +56,3 @@ setopt auto_param_slash
 setopt dot_glob
 setopt extended_glob
 unsetopt prompt_sp
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

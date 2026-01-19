@@ -2,7 +2,7 @@
 alias zconf="nvim ~/.config/zsh/.zshrc"
 alias pacman="sudo pacman"
 alias sys="sudo systemctl"
-alias rm="rm -ir"
+alias rm="rm -rf"
 alias copy="xclip -sel clipboard"
 alias rp="yay -Rcns"
 # My alias
