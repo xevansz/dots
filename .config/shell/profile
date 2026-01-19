@@ -8,8 +8,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
-export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export ZDOTDIR="$HOME/.config/zsh"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -17,7 +17,13 @@ export NVM_DIR="$HOME/.config/nvm"
 
 # history files
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
-export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
 
 # less colored man
 export LESS='-R'
+
+# icons
+export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
+
+# python
+export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
+

@@ -15,6 +15,7 @@ export CXX=/usr/bin/g++ # replace gcc with gcc-12, same for g++ -> g++-12
 source "$HOME/.config/shell/alias"
 
 # completion setup
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
@@ -38,7 +39,7 @@ SAVEHIST=5000
 mkdir -p "$(dirname "$HISTFILE")"
 
 setopt append_history inc_append_history share_history extended_history
-setopt auto_menu menu_complete
+setopt auto_menu menu_complete auto_cd
 setopt auto_param_slash
 setopt dot_glob
 setopt extended_glob
