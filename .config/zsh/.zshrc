@@ -1,5 +1,4 @@
 # sys disable systemd-networkd-wait-online.service
-# load modules
 autoload -Uz add-zsh-hook compinit
 compinit
 
@@ -19,19 +18,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
-# auto rehash
-# zshcache_time="$(date +%s%N)"
-# rehash_precmd() {
-#   if [[ -a /var/cache/zsh/pacman ]]; then
-#     local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
-#     if (( zshcache_time < paccache_time )); then
-#       rehash
-#       zshcache_time="$paccache_time"
-#     fi
-#   fi
-# }
-# add-zsh-hook -Uz precmd rehash_precmd
-
 # history settings
 export HISTFILE="$HOME/.local/state/zsh/history"
 HISTSIZE=5000
@@ -40,9 +26,7 @@ mkdir -p "$(dirname "$HISTFILE")"
 
 setopt append_history inc_append_history share_history extended_history
 setopt auto_menu menu_complete auto_cd
-setopt auto_param_slash
-setopt dot_glob
-setopt extended_glob
+setopt auto_param_slash dot_glob extended_glob
 unsetopt prompt_sp
 
 # plugins
@@ -50,14 +34,24 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # auto rehash
+if [[ -a /var/cache/zsh/pacman ]]; then
+  zshcache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
+else
+  zshcache_time=0
+fi
 rehash_precmd() {
-  [[ -f /var/cache/zsh/pacman ]] && rehash
+  if [[ -a /var/cache/zsh/pacman ]]; then
+    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
+    if (( zshcache_time < paccache_time )); then
+      rehash
+      zshcache_time="$paccache_time"
+    fi
+  fi
 }
-add-zsh-hook precmd rehash_precmd
+add-zsh-hook -Uz precmd rehash_precmd
+
+# ---- SSH Agent (keychain) ----
+eval "$(keychain --eval --quiet id_ed25519)"
 
 # theme
 source ~/.config/zsh/aguile.zsh
-
-# command not found (Arch)
-# cachyos/find-the-command-git install first
-# source /usr/share/doc/find-the-command/ftc.zsh
