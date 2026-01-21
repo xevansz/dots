@@ -55,3 +55,9 @@ eval "$(keychain --eval --quiet id_ed25519)"
 
 # theme
 source ~/.config/zsh/aguile.zsh
+
+# Auto-start tmux
+# if [[ -z "$TMUX" ]]; then
+#   exec tmux
+# fi
+
