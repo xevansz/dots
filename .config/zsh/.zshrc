@@ -24,8 +24,8 @@ HISTSIZE=5000
 SAVEHIST=5000
 mkdir -p "$(dirname "$HISTFILE")"
 
-setopt append_history inc_append_history share_history extended_history
-setopt auto_menu menu_complete auto_cd
+setopt append_history inc_append_history share_history extended_history hist_expire_dups_first hist_verify
+setopt auto_menu menu_complete auto_cd correct
 setopt auto_param_slash dot_glob extended_glob
 unsetopt prompt_sp
 
@@ -55,9 +55,4 @@ eval "$(keychain --eval --quiet id_ed25519)"
 
 # theme
 source ~/.config/zsh/aguile.zsh
-
-# Auto-start tmux
-# if [[ -z "$TMUX" ]]; then
-#   exec tmux
-# fi
 
