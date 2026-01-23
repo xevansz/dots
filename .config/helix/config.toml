@@ -1,1 +1,37 @@
-# hi?
+theme = "max_monokai_pro_spectrum_no_underline"
+
+[keys.normal]
+"ret" = "goto_word"
+C-j     = "page_down"
+C-k     = ["page_up", "goto_window_top"]
+"tab"   = "expand_selection"
+"S-tab" = "shrink_selection"
+
+[editor]
+cursorline = true
+mouse = true
+true-color = true
+scrolloff = 17 
+auto-format = true
+line-number = "relative"
+auto-save = true
+gutters = ["diff","diagnostics", "line-numbers", "spacer", "spacer"]
+jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
+completion-timeout = 0
+completion-trigger-len = 1
+auto-pairs = false
+bufferline = "never"
+#rainbow-brackets = true
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+git-exclude = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
