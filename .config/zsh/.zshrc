@@ -50,9 +50,5 @@ rehash_precmd() {
 }
 add-zsh-hook -Uz precmd rehash_precmd
 
-# ---- SSH Agent (keychain) ----
-eval "$(keychain --eval --quiet id_ed25519)"
-
 # theme
 source ~/.config/zsh/aguile.zsh
-
