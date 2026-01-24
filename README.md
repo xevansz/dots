@@ -11,7 +11,7 @@ rm -r tmpdir
 
 ## adding plugins
 ```
-yay -S zsh-autosuggestions zsh-syntax-highlighting
+yay -S zsh-autosuggestions zsh-syntax-highlighting fzf-tab-source
 ```
 
 ## creating folder
