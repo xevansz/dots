@@ -15,7 +15,8 @@ source "$HOME/.config/shell/alias"
 
 # completion setup
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-zstyle ':completion:*' menu select
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no # select
 zstyle ':completion::complete:*' gain-privileges 1
 
 # history settings
@@ -32,6 +33,10 @@ unsetopt prompt_sp
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/fzf-tab-source/fzf-tab.plugin.zsh
+
+# shell integration
+eval "$(fzf --zsh)"
 
 # auto rehash
 if [[ -a /var/cache/zsh/pacman ]]; then
