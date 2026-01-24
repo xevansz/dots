@@ -25,3 +25,10 @@ mkdir -p "$HOME/.local/share/gnupg"
 - icons - Colloid icon theme purple
 - theme - nothing or sweet  
 Backed up using konsave
+
+## dcli
+```
+git clone https://gitlab.com/theblackdon/dcli.git
+cd dcli
+./install.sh
+```
