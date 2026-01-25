@@ -20,7 +20,7 @@ mkdir -p "$HOME/.local/share/gnupg"
 ```
 
 ## theme
-- colors - Everforest, compline
+- colors - Everforest(KDE), compline and kanagawa for everything else
 - fonts - iosevka and atkinson hyperlegible
 - icons - Colloid icon theme purple
 - theme - nothing or sweet  
