@@ -11,30 +11,24 @@ packages:
 
   # Kernel (uncomment the one you use)
   # - linux              # Standard kernel
-  - linux-zen          # Zen kernel (optimized for desktop)
-  - linux-zen-headers
-  - nvidia-open-dkms# Long-term support kernel
   # - linux-hardened     # Security-focused kernel
 
   # Firmware (usually needed)
   # - linux-firmware
 
   # Basic tools (uncomment as needed)
-  # - git
-  # - vim
-  # - neovim
-  - btop 
+  - neovim
   - freedownloadmanager
   - keepassxc
   - zsh-syntax-highlighting
   - zsh-autosuggestions
+  - fzf-tab-source
   - zsh
   - zed
   - zoom
   - waterfox
   - windsurf
   - xdg-ninja
-  - vscodium-bin
   - obsidian
   - libreoffice-still
   - ttf-iosevka
@@ -44,3 +38,7 @@ packages:
   - brave-bin
   - docker
   - docker-compose
+  - fzf
+  - yazi
+  - helix
+  - yt-dlp

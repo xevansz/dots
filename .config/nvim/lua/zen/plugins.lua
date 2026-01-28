@@ -48,6 +48,9 @@ return require('packer').startup(function(use)
         config = function() require('zen.plugins.theme') end
     }
 
+    -- kanagawa
+    use "rebelot/kanagawa.nvim"
+
     -- pywal colors
 --    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
