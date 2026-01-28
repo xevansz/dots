@@ -15,7 +15,6 @@ source "$HOME/.config/shell/alias"
 
 # completion setup
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no # select
 zstyle ':completion::complete:*' gain-privileges 1
 
@@ -26,8 +25,8 @@ SAVEHIST=5000
 mkdir -p "$(dirname "$HISTFILE")"
 
 setopt append_history inc_append_history share_history extended_history hist_expire_dups_first hist_verify
-setopt auto_menu menu_complete auto_cd correct
-setopt auto_param_slash dot_glob extended_glob
+setopt auto_menu menu_complete auto_cd
+setopt auto_param_slash dot_glob extended_glob # correct
 unsetopt prompt_sp
 
 # plugins

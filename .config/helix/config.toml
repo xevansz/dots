@@ -1,11 +1,13 @@
-theme = "max_monokai_pro_spectrum_no_underline"
+# theme = "base16_default"
+theme = "kanagawa_t"
 
 [keys.normal]
+"A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+"A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 "ret" = "goto_word"
-C-j     = "page_down"
-C-k     = ["page_up", "goto_window_top"]
 "tab"   = "expand_selection"
 "S-tab" = "shrink_selection"
+w = "move_prev_word_start"
 
 [editor]
 cursorline = true
@@ -13,7 +15,7 @@ mouse = true
 true-color = true
 scrolloff = 17 
 auto-format = true
-line-number = "relative"
+#line-number = "relative"
 auto-save = true
 gutters = ["diff","diagnostics", "line-numbers", "spacer", "spacer"]
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
@@ -35,3 +37,19 @@ enable = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[keys.normal.space]
+# Yazi file picker integration
+E = [
+  ":sh rm -f /tmp/unique-file",
+  ":insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file",
+  ":open %sh{cat /tmp/unique-file}",
+  ":redraw"
+]
+
+
+# Git blame current line
+[keys.normal.space.space]
+b = """
+:sh git blame -L %{cursor_line},%{cursor_line} --date=relative -- "%{buffer_name}"
+"""
