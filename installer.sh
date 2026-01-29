@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -euxo pipefail
 
 # Install script for dotfiles
 # author: xevansz
@@ -8,8 +8,8 @@ set -euo pipefail
 # repo: https://github.com/xevansz/dots
 # descripton: using dcli to install packages, then use bare repo to setup dots
 
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root" 
+if [[ $EUID -eq 0 ]]; then
+  echo "This script must not be run as root" 
   exit 1
 fi 
 
@@ -27,18 +27,19 @@ else
 fi
 
 # dcli
-DCLI_DIR = "/tmp/dcli"
+DCLI_DIR="/tmp/dcli"
 
 if [[ -d "$DCLI_DIR" ]]; then
   rm -rf "$DCLI_DIR"
 fi
 
 git clone https://gitlab.com/theblackdon/dcli.git "$DCLI_DIR"
-cd "DCLI_DIR"
+cd "$DCLI_DIR"
 
+echo "[INFO] Installing dcli..."
 ./install.sh
 
-cd
+cd "$HOME"
 
 dcli sync
 
@@ -72,8 +73,8 @@ fi
 SYSMAINT="$HOME/.config/sysmaintenance.sh"
 
 if [[ -f "$SYSMAINT" ]]; then
-  chmod +x "SYSMAINT"
-  sh ./"SYSMAINT"
+  chmod +x "$SYSMAINT"
+  bash "$SYSMAINT"
 else
   echo "sys maintence script not found"
 fi
