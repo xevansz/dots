@@ -5,40 +5,41 @@ description: Base system packages
 
 packages:
   # Essential base system
-  - base
-  - base-devel
   - cuda
 
-  # Kernel (uncomment the one you use)
-  # - linux              # Standard kernel
-  # - linux-hardened     # Security-focused kernel
-
-  # Firmware (usually needed)
-  # - linux-firmware
-
   # Basic tools (uncomment as needed)
-  - neovim
-  - freedownloadmanager
-  - keepassxc
-  - zsh-syntax-highlighting
-  - zsh-autosuggestions
+  - 7zip
+  - brave-bin
+  - cursor-bin
+  - discord
+  - eza
+  - fd
+  - fzf
   - fzf-tab-source
-  - zsh
-  - zed
-  - zoom
-  - waterfox
-  - windsurf
-  - xdg-ninja
-  - obsidian
+  - helix
+  - htop
+  - keepassxc
+  - kitty
+  - konsave
   - libreoffice-still
+  - neovim
+  - obsidian
+  - python312
+  - tk
+  - ttf-meslo-nerd
   - ttf-iosevka
   - ttf-atkinson-hyperlegible-next
+  - freedownloadmanager
+  - vscodium
+  - windsurf
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+  - zsh
+  - zed
+  - xdg-ninja
   - python-pywal
   - python-pdm
-  - brave-bin
   - docker
   - docker-compose
-  - fzf
   - yazi
-  - helix
   - yt-dlp

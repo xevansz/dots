@@ -4,23 +4,19 @@
 <title>Qt SVG Document</title>
 <desc>Generated with Qt</desc>
 <defs>
-<linearGradient gradientUnits="userSpaceOnUse" x1="454.07" y1="460.798" x2="753.204" y2="188.829" id="gradient1">
-    <stop offset="0" stop-color="#eb3131" stop-opacity="1" />
-    <stop offset="1" stop-color="#a82323" stop-opacity="1" />
-</linearGradient>
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<g fill="#d46969" fill-opacity="1" stroke="none" transform="matrix(0.0548336,0,0,-0.0548338,-0.161987,50.2673)"
+<g fill="#5b5c63" fill-opacity="1" stroke="none" transform="matrix(0.0548323,0,0,-0.0548325,9.14653,50.4539)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
-opacity="0.5" >
-<path vector-effect="none" fill-rule="evenodd" d="M458.879,4.875 C710.679,4.875 914.804,208.996 914.804,460.8 C914.804,712.596 710.679,916.721 458.879,916.721 C207.079,916.721 2.95417,712.596 2.95417,460.8 C2.95417,208.996 207.079,4.875 458.879,4.875 "/>
+>
+<path vector-effect="none" fill-rule="evenodd" d="M289.126,8.27877 C540.932,8.27877 745.062,212.405 745.062,464.214 C745.062,716.017 540.932,920.146 289.126,920.146 C37.3208,920.146 -166.809,716.017 -166.809,464.214 C-166.809,212.405 37.3208,8.27877 289.126,8.27877 "/>
 </g>
 
-<g fill="url(#gradient1)" stroke="none" transform="matrix(0.0548336,0,0,-0.0548338,-0.161987,50.2673)"
+<g fill="#5b5c63" fill-opacity="1" stroke="none" transform="matrix(0.0548323,0,0,-0.0548325,9.14653,50.4539)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
-opacity="0.5" >
-<path vector-effect="none" fill-rule="evenodd" d="M458.879,43.65 C689.263,43.65 876.029,230.413 876.029,460.8 C876.029,691.179 689.263,877.946 458.879,877.946 C228.496,877.946 41.7292,691.179 41.7292,460.8 C41.7292,230.413 228.496,43.65 458.879,43.65 "/>
+>
+<path vector-effect="none" fill-rule="evenodd" d="M289.126,47.0546 C519.515,47.0546 706.286,233.822 706.286,464.214 C706.286,694.598 519.515,881.37 289.126,881.37 C58.7378,881.37 -128.033,694.598 -128.033,464.214 C-128.033,233.822 58.7378,47.0546 289.126,47.0546 "/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

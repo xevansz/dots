@@ -4,32 +4,32 @@
 <title>Qt SVG Document</title>
 <desc>Generated with Qt</desc>
 <defs>
-<linearGradient gradientUnits="userSpaceOnUse" x1="465.831" y1="460.56" x2="729.863" y2="162.271" id="gradient1">
-    <stop offset="0" stop-color="#eb3131" stop-opacity="1" />
-    <stop offset="1" stop-color="#a82323" stop-opacity="1" />
+<linearGradient gradientUnits="userSpaceOnUse" x1="5.68572" y1="515.151" x2="865.455" y2="540.103" id="gradient1">
+    <stop offset="0" stop-color="#ff416c" stop-opacity="1" />
+    <stop offset="1" stop-color="#ff4b2b" stop-opacity="1" />
 </linearGradient>
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<g fill="#d46969" fill-opacity="1" stroke="none" transform="matrix(0.0548336,0,0,-0.0548336,-0.325575,50.2543)"
+<g fill="url(#gradient1)" stroke="none" transform="matrix(0.0548323,0,0,-0.0548323,-0.380168,50.1828)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M461.867,4.6375 C713.663,4.6375 917.788,208.763 917.788,460.562 C917.788,712.363 713.663,916.487 461.867,916.487 C210.063,916.487 5.9375,712.363 5.9375,460.562 C5.9375,208.763 210.063,4.6375 461.867,4.6375 "/>
+<path vector-effect="none" fill-rule="evenodd" d="M462.873,899.089 C705.774,899.089 902.688,702.177 902.688,459.269 C902.688,216.362 705.774,19.4501 462.873,19.4501 C219.964,19.4501 23.0496,216.362 23.0496,459.269 C23.0496,702.177 219.964,899.089 462.873,899.089 "/>
 </g>
 
-<g fill="url(#gradient1)" stroke="none" transform="matrix(0.0548336,0,0,-0.0548336,-0.325575,50.2543)"
+<g fill="none" stroke="#e70340" stroke-opacity="1" stroke-width="32.2326" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(0.0548323,0,0,-0.0548323,-0.380168,50.1828)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M461.867,43.4125 C692.245,43.4125 879.008,230.179 879.008,460.562 C879.008,690.946 692.245,877.709 461.867,877.709 C231.479,877.709 44.7167,690.946 44.7167,460.562 C44.7167,230.179 231.479,43.4125 461.867,43.4125 "/>
+<path vector-effect="none" fill-rule="evenodd" d="M462.873,899.089 C705.774,899.089 902.688,702.177 902.688,459.269 C902.688,216.362 705.774,19.4501 462.873,19.4501 C219.964,19.4501 23.0496,216.362 23.0496,459.269 C23.0496,702.177 219.964,899.089 462.873,899.089 "/>
 </g>
 
-<g fill="#1b1b1d" fill-opacity="1" stroke="none" transform="matrix(0.0548336,0,0,-0.0548336,-0.325575,50.2543)"
+<g fill="#9f1d2b" fill-opacity="1" stroke="none" transform="matrix(0.0548323,0,0,-0.0548323,-0.380168,50.1828)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
 >
 <path vector-effect="none" fill-rule="evenodd" d="M246.821,299.191 L623.233,675.604 C637.801,690.171 661.633,690.171 676.208,675.604 L676.905,674.9 C691.475,660.334 691.475,636.5 676.909,621.93 L300.496,245.521 C285.925,230.95 262.092,230.95 247.525,245.521 L246.821,246.217 C232.254,260.787 232.254,284.625 246.821,299.191 "/>
 </g>
 
-<g fill="#1b1b1d" fill-opacity="1" stroke="none" transform="matrix(0.0548336,0,0,-0.0548336,-0.325575,50.2543)"
+<g fill="#9f1d2b" fill-opacity="1" stroke="none" transform="matrix(0.0548323,0,0,-0.0548323,-0.380168,50.1828)"
 font-family="Atkinson Hyperlegible Next" font-size="10" font-weight="400" font-style="normal" 
 >
 <path vector-effect="none" fill-rule="evenodd" d="M300.496,675.604 L676.905,299.191 C691.471,284.625 691.471,260.787 676.905,246.221 L676.204,245.521 C661.633,230.95 637.801,230.95 623.233,245.521 L246.821,621.93 C232.25,636.5 232.25,660.334 246.821,674.905 L247.521,675.604 C262.092,690.175 285.925,690.175 300.496,675.604 "/>
