@@ -19,8 +19,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
 PreloadWeight=100
-popupHeight=452
-popupWidth=560
+popupHeight=451
+popupWidth=552
 
 [Containments][2][Applets][21][Configuration][Appearance]
 fontWeight=400
@@ -29,10 +29,6 @@ use24hFormat=2
 [Containments][2][Applets][21][Configuration][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
-
-[Containments][2][Applets][22]
-immutability=1
-plugin=org.kde.plasma.showdesktop
 
 [Containments][2][Applets][28]
 immutability=1
@@ -44,8 +40,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
-popupHeight=1016
-popupWidth=1310
+popupHeight=1008
+popupWidth=1306
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
@@ -61,6 +57,16 @@ plugin=org.kde.plasma.appmenu
 immutability=1
 plugin=org.kde.plasma.pager
 
+[Containments][2][Applets][4][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][2][Applets][4][Configuration][General]
+currentDesktopSelected=ShowDesktop
+showOnlyCurrentScreen=true
+showWindowOutlines=false
+wrapPage=true
+
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -72,7 +78,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=434
+popupHeight=440
 popupWidth=440
 wallpaperplugin=org.kde.image
 
@@ -150,7 +156,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][2][Applets][7][Applets][24][Configuration]
-PreloadWeight=44
+PreloadWeight=74
 
 [Containments][2][Applets][7][Applets][25]
 immutability=1
@@ -164,7 +170,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][2][Applets][7][Applets][31][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][2][Applets][7][Applets][8]
 immutability=1
@@ -187,7 +193,7 @@ knownItems=org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasm
 shownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.weather
 
 [Containments][2][General]
-AppletOrder=3;4;6;30;28;7;21;22
+AppletOrder=3;4;6;30;28;7;21
 
 [Containments][23][Applets][28][Applets][37]
 plugin=org.kde.plasma.keyboardindicator
@@ -215,7 +221,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][29][Applets][5][Configuration][General]
-launchers=preferred://filemanager,applications:kitty.desktop,applications:waterfox.desktop
+launchers=preferred://filemanager,applications:waterfox.desktop,applications:brave-browser.desktop
 
 [Containments][29][General]
 AppletOrder=5
@@ -232,7 +238,19 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][33][Wallpaper][org.kde.image][General]
-Image=/home/darth/Pictures/celestia.png
+Image=/home/darth/Pictures/Wallpapers/cat_cycle.png
+
+[Containments][35]
+activityId=a528fb32-5851-4b8c-9fcb-7ceff3becaf5
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][35][Wallpaper][org.kde.image][General]
+Image=/home/darth/Pictures/Wallpapers/cat_cycle.png
 
 [ScreenMapping]
 itemsOnDisabledScreens=
