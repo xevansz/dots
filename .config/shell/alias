@@ -11,9 +11,7 @@ alias fuck="sudo"
 alias yeet-orphans="yay -Qtdq | yay -Rns -"
 alias eat-orphans="yay -Qtdq | yay -Rsu -"
 alias pwd="pwd && pwd | xclip -sel clipboard"
-alias ls="exa -alhG --color=always --icons --group-directories-first"
-alias la="exa -alh --color=always --icons --group-directories-first"
-alias l="ls"
+alias ls="exa -alh --color=always --icons --group-directories-first"
 alias hx="helix"
 
 # git
