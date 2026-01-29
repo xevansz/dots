@@ -53,7 +53,7 @@ if [[ -d "$DOTS_GIT_DIR" ]]; then
 else
   git clone --separate-git-dir="$DOTS_GIT_DIR" "$DOTS_REPO" "$TMPDIR"
 
-  rsync --recursive --verbose --exclude '.git' "$TMPDIR/" "$HOME"
+  rsync --recursive --verbose --exclude '.git' --exclude 'installer.sh' "$TMPDIR/" "$HOME"
 
   rm -rf "$TMPDIR"
 fi
