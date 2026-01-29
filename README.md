@@ -32,3 +32,9 @@ git clone https://gitlab.com/theblackdon/dcli.git
 cd dcli
 ./install.sh
 ```
+
+## script
+
+```
+curl -fsSL https://raw.githubusercontent.com/xevansz/dots/refs/heads/master/installer.sh | bash
+```

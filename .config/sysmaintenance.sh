@@ -3,15 +3,15 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Starting comprehensive system cleanup..."
+echo "Starting comprehensive system cleanup..."
 echo
 
-echo "📦 Updating system"
+echo "Updating system"
 yay -Syu --noconfirm
 echo
 
 echo
-echo "🧹 Clearing pacman cache"
+echo "Clearing pacman cache"
 before=$(du -sb /var/cache/pacman/pkg | cut -f1)
 paccache -rk1
 yay -Sc --noconfirm
@@ -20,7 +20,7 @@ echo "Freed $(( (before-after)/1024/1024 )) MB"
 echo
 
 echo
-echo "👻Yeeting orphans"
+echo "Yeeting orphans"
 orphans=$(yay -Qdtq || true)
 if [ -n "$orphans" ]; then
     yay -Rns --noconfirm $orphans
@@ -30,7 +30,7 @@ else
 fi
 echo
 
-echo "🗑️ Cleaning AUR build cache"
+echo "Cleaning AUR build cache"
 if [ -d ~/.cache/yay ]; then
     before=$(du -sb ~/.cache/yay | cut -f1)
     rm -rf ~/.cache/yay/*
@@ -40,7 +40,7 @@ fi
 echo
 
 echo
-echo "🧽 Clearing ~/.cache"
+echo "Clearing ~/.cache"
 before=$(du -sb ~/.cache | cut -f1)
 for dir in ~/.cache/*/; do
     if [[ -d "$dir" ]]; then
@@ -60,15 +60,15 @@ echo "Freed $(( (before-after)/1024/1024 )) MB"
 echo
 
 echo
-echo "📝Cleaning system logs"
+echo "Cleaning system logs"
 sudo journalctl --vacuum-time=7d
 echo
 
-echo "🗂️ Cleaning persistent temporary files"
+echo "Cleaning persistent temporary files"
 sudo find /var/tmp -type f -atime +7 -delete 2>/dev/null || true
 echo
 
-echo "📊 Final system status"
+echo "Final system status"
 echo "Disk usage:"
 df -h / /home 2>/dev/null || df -h /
 echo
