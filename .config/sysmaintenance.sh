@@ -1,62 +1,35 @@
-# This code is almost entirely taken from Mr. Cejas's blog: https://fernandocejas.com/blog/engineering/2022-03-30-arch-linux-system-maintance/
+# ~This code is almost entirely taken from Mr. Cejas's blog~: https://fernandocejas.com/blog/engineering/2022-03-30-arch-linux-system-maintance/, making some small changes
 
 #!/bin/bash
-set -e
+set -euo pipefail
 
 echo "Starting comprehensive system cleanup..."
 echo
 
+echo "refresh mirros"
+rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist || echo "Mirror refresh failed"
+echo
+
 echo "Updating system"
-yay -Syu --noconfirm
+paru -Syyu --noconfirm
 echo
 
 echo
 echo "Clearing pacman cache"
-before=$(du -sb /var/cache/pacman/pkg | cut -f1)
-paccache -rk1
-yay -Sc --noconfirm
-after=$(du -sb /var/cache/pacman/pkg | cut -f1)
+before=$(sudo du -sb /var/cache/pacman/pkg 2>/dev/null | cut -f1 || echo 0)
+sudo rm -rf /var/cache/pacman/pkg/download-*
+paccache -rk2
+after=$(sudo du -sb /var/cache/pacman/pkg | cut -f1)
 echo "Freed $(( (before-after)/1024/1024 )) MB"
-echo
-
-echo
-echo "Yeeting orphans"
-orphans=$(yay -Qdtq || true)
-if [ -n "$orphans" ]; then
-    yay -Rns --noconfirm $orphans
-    echo "Orphans yeeted succesfully"
-else
-    echo "No orphans found."
-fi
 echo
 
 echo "Cleaning AUR build cache"
-if [ -d ~/.cache/yay ]; then
-    before=$(du -sb ~/.cache/yay | cut -f1)
-    rm -rf ~/.cache/yay/*
-    after=$(du -sb ~/.cache/yay | cut -f1)
-    echo "Freed $(( (before-after)/1024/1024 )) MB from yay cache"
+if [ -d ~/.cache/paru ]; then
+    before=$(du -sb ~/.cache/paru | cut -f1)
+    rm -rf ~/.cache/paru/*
+    after=$(du -sb ~/.cache/paru | cut -f1)
+    echo "Freed $(( (before-after)/1024/1024 )) MB from paru cache"
 fi
-echo
-
-echo
-echo "Clearing ~/.cache"
-before=$(du -sb ~/.cache | cut -f1)
-for dir in ~/.cache/*/; do
-    if [[ -d "$dir" ]]; then
-        case $(basename "$dir") in
-            "fontconfig"|"mesa_shader_cache"|"nvidia")
-                # Keep these directories but clean old files
-                find "$dir" -type f -atime +7 -delete 2>/dev/null || true
-                ;;
-            *)
-                rm -rf "$dir"* 2>/dev/null || true
-                ;;
-        esac
-    fi
-done
-after=$(du -sb ~/.cache | cut -f1)
-echo "Freed $(( (before-after)/1024/1024 )) MB"
 echo
 
 echo

@@ -8,8 +8,7 @@ alias copy="xclip -sel clipboard"
 
 # My alias
 alias fuck="sudo"
-alias yeet-orphans="yay -Qtdq | yay -Rns -"
-alias eat-orphans="yay -Qtdq | yay -Rsu -"
+# alias yeet-orphans="paru -Qtdq | paru -Rns -" It's not working well, no need to rm orphans freq
 alias pwd="pwd && pwd | xclip -sel clipboard"
 alias ls="exa -alh --color=always --icons --group-directories-first"
 alias hx="helix"

@@ -27,19 +27,20 @@ packages:
   - python312
   - tk
   - ttf-meslo-nerd
-  - ttf-iosevka
+  - ttf-iosevka-nerd
   - ttf-atkinson-hyperlegible-next
   - freedownloadmanager
   - vscodium
   - windsurf
+  - waterfox-bin
   - zsh-syntax-highlighting
   - zsh-autosuggestions
   - zsh
   - zed
-  - xdg-ninja
   - python-pywal
   - python-pdm
   - docker
   - docker-compose
   - yazi
   - yt-dlp
+  - spotify

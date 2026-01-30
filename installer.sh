@@ -18,14 +18,6 @@ if ! ping -c 1 github.com >/dev/null 2>&1; then
   exit 1
 fi
 
-# yay
-if command -v yay >/dev/null 2>&1; then
-  echo "yay exists"
-else
-  echo "Installing yay"
-  sudo pacman -S --needed --noconfirm yay
-fi
-
 # prerequisists
 SSH="$HOME/.ssh"
 
@@ -68,30 +60,10 @@ git clone https://gitlab.com/theblackdon/dcli.git "$DCLI_DIR"
 cd "$DCLI_DIR"
 
 echo "Installing dcli..."
-./install.sh
-
-cd "$HOME"
-
-dcli sync
-
-# konsave
-if command -v konsave >/dev/null 2>&1; then
-  konsave -i kemuri || true
-else
-  echo "konsave not installed. Skipping theme restore."
-fi
-
-# clean up
-SYSMAINT="$HOME/.config/sysmaintenance.sh"
-
-if [[ -f "$SYSMAINT" ]]; then
-  chmod +x "$SYSMAINT"
-  bash "$SYSMAINT"
-else
-  echo "sys maintence script not found"
-fi
+bash -c "$DCLI_DIR/install.sh"
 
 echo "dots install && setup complete"
-echo "reboot the system"
-
+echo "Apply konsave theme && Install packages"
+echo "Run system maintenance after running dcli"
+# dcli sync
 
