@@ -26,22 +26,17 @@ else
   sudo pacman -S --needed --noconfirm yay
 fi
 
-# dcli
-DCLI_DIR="/tmp/dcli"
+# prerequisists
+SSH="$HOME/.ssh"
 
-if [[ -d "$DCLI_DIR" ]]; then
-  rm -rf "$DCLI_DIR"
+if [[ -d "$SSH" ]]; then
+  chmod 700 ~/.ssh
+  chmod 600 ~/.ssh/id_ed25519
+  chmod 644 ~/.ssh/id_ed25519.pub
+else
+  echo "Do copy your .ssh/ first idiot(xevansz)"
+  exit 0
 fi
-
-git clone https://gitlab.com/theblackdon/dcli.git "$DCLI_DIR"
-cd "$DCLI_DIR"
-
-echo "[INFO] Installing dcli..."
-./install.sh
-
-cd "$HOME"
-
-dcli sync
 
 # dots
 DOTS_REPO="git@github.com:xevansz/dots.git"
@@ -61,6 +56,23 @@ fi
 # gnupg folder
 mkdir -p "$HOME/.local/share/gnupg"
 chmod 700 "$HOME/.local/share/gnupg"
+
+# dcli
+DCLI_DIR="/tmp/dcli"
+
+if [[ -d "$DCLI_DIR" ]]; then
+  rm -rf "$DCLI_DIR"
+fi
+
+git clone https://gitlab.com/theblackdon/dcli.git "$DCLI_DIR"
+cd "$DCLI_DIR"
+
+echo "Installing dcli..."
+./install.sh
+
+cd "$HOME"
+
+dcli sync
 
 # konsave
 if command -v konsave >/dev/null 2>&1; then
