@@ -5,9 +5,16 @@ theme = "kanagawa_t"
 "A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 "ret" = "goto_word"
-"tab"   = "expand_selection"
-"S-tab" = "shrink_selection"
 w = "move_prev_word_start"
+tab = "move_parent_node_end"
+S-tab = "move_parent_node_start"
+
+[keys.insert]
+S-tab = "move_parent_node_start"
+
+[keys.select]
+tab = "extend_parent_node_end"
+S-tab = "extend_parent_node_start"
 
 [editor]
 cursorline = true
@@ -32,6 +39,7 @@ git-exclude = false
 
 [editor.soft-wrap]
 enable = true
+wrap-indicator = ""
 
 [editor.cursor-shape]
 insert = "bar"
