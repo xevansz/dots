@@ -1,0 +1,45 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "tab_size": 4,
+  "terminal": {
+    "font_family": "Iosevka Nerd Font"
+  },
+  "git": {
+    "blame": {
+      "show_avatar": false
+    },
+    "inline_blame": {
+      "show_commit_summary": false
+    }
+  },
+  "search": {
+    "include_ignored": false,
+    "whole_word": false
+  },
+  "which_key": {
+    "enabled": false
+  },
+  "ui_font_family": "Atkinson Hyperlegible Next",
+  "buffer_font_family": "Atkinson Hyperlegible Next",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "auto_update": false,
+  "helix_mode": false,
+  "ui_font_size": 15.0,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "system",
+    "light": "Kanagawa Lotus",
+    "dark": "Kanagawa Wave",
+  },
+}

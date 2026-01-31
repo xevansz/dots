@@ -36,5 +36,5 @@ cd dcli
 ## script
 
 ```
-curl -fsSL https://raw.githubusercontent.com/xevansz/dots/refs/heads/master/installer.sh | bash
+curl -fsSL https://raw.githubusercontent.com/xevansz/dots/refs/heads/master/.config/scripts/installer.sh | bash
 ```
