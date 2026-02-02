@@ -1,29 +1,38 @@
-# XDG env variables
+# XDG base dirs
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
-# other system env variables
+# system env
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export ZDOTDIR="$HOME/.config/zsh"
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# paths
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/cuda/lib64:$LD_LIBRARY_PATH"
 
-# history files
+# compilers
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+
+# tools that other apps rely on
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
+export LESS=-R
+export MANPAGER="less -R"
+export MANROFFOPT='-P -c'
 
-# less colored man
-export LESS='-R'
-
-# icons
+# misc
 export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
-
-# python
 export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
+
+# nvm (environment loader)
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+
 
