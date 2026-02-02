@@ -1,6 +1,6 @@
 
 # dotfiles
-A better $HOME, for me.
+A better $HOME, a better me.
 
 ## setting up the dotfiles 
 ```
@@ -9,32 +9,14 @@ rsync --recursive --verbose --exclude '.git' tmpdir/ $HOME
 rm -r tmpdir
 ```
 
-## adding plugins
-```
-yay -S zsh-autosuggestions zsh-syntax-highlighting fzf-tab-source
-```
-
-## creating folder
-```
-mkdir -p "$HOME/.local/share/gnupg"
-```
-
 ## theme
-- colors - Everforest(KDE), compline and kanagawa for everything else
-- fonts - iosevka and atkinson hyperlegible
-- icons - Colloid icon theme purple
-- theme - nothing or sweet  
-Backed up using konsave
-
-## dcli
-```
-git clone https://gitlab.com/theblackdon/dcli.git
-cd dcli
-./install.sh
-```
+- colors - Everforest, compline and kanagawa for everything.
+- fonts - iosevka and atkinson hyperlegible.
+- icons - Colloid icon theme purple.
+- panel colorizer for dock
+**Backed up using konsave.**
 
 ## script
-
 ```
 curl -fsSL https://raw.githubusercontent.com/xevansz/dots/refs/heads/master/.config/scripts/installer.sh | bash
 ```

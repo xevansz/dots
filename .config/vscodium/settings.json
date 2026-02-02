@@ -1,6 +1,6 @@
 {
-    "workbench.colorTheme": "Tokyo Night",
-    /* Mayukai reversal */
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Kanagawa Dragon",
     "explorer.confirmDelete": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -15,16 +15,8 @@
     "workbench.tree.indent": 12,
     "explorer.compactFolders": false,
     "editor.tabCompletion": "on",
-
-    // power mode settings
-    "powermode.enabled": true,
-    "powermode.presets": "exploding-rift",
-    "powermode.explosions.size": 6,
-    "powermode.explosions.duration": 30,
-    "powermode.combo.counterEnabled": "hide",
-    "powermode.shake.enabled": false,
-    "code-runner.runInTerminal": true,
     "editor.fontFamily": "'Iosevka', 'monospace', monospace",
-    "powermode.combo.location": "off",
     "workbench.startupEditor": "none"
+    "code-runner.runInTerminal": true,
 }
+
