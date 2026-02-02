@@ -1,10 +1,11 @@
 # Sys alias
-alias zconf="nvim ~/.config/zsh/.zshrc"
+alias zconf="hx ~/.config/zsh/.zshrc"
 alias sys="sudo systemctl"
 alias rm="rm -rvf"
 alias cp="cp -v"
 alias mv="mv -v"
 alias copy="xclip -sel clipboard"
+alias mem="sudo ps_mem | tail"
 
 # My alias
 alias fuck="sudo"
@@ -12,6 +13,8 @@ alias fuck="sudo"
 alias pwd="pwd && pwd | xclip -sel clipboard"
 alias ls="exa -alh --color=always --icons --group-directories-first"
 alias hx="helix"
+alias sysmain="bash /home/seer/.config/scripts/sysmaintenance.sh"
+alias td="hx ~/todo"
 
 # git
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
