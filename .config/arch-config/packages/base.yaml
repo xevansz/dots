@@ -9,7 +9,6 @@ packages:
 
   # Basic tools (uncomment as needed)
   - 7zip
-  - brave-bin
   - cursor-bin
   - discord
   - eza
@@ -30,7 +29,6 @@ packages:
   - ttf-iosevka-nerd
   - ttf-atkinson-hyperlegible-next
   - freedownloadmanager
-  - vscodium
   - windsurf
   - waterfox-bin
   - zsh-syntax-highlighting
@@ -45,3 +43,12 @@ packages:
   - yt-dlp
   - spotify
   - xclip
+  - xsel
+  - okular
+  - telegram-desktop
+  - gtk-engine-murrine
+  - gtk-engines
+  - bibata-cursor-theme-bin
+  - helium-browser-bin
+  - plasma6-applets-plasmusic-toolbar
+  - lesspipe
