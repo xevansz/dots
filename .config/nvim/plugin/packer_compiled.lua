@@ -80,18 +80,13 @@ _G.packer_plugins = {
     path = "/home/seer/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  catppuccin = {
-    config = { "\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.theme\frequire\0" },
-    loaded = true,
-    path = "/home/seer/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["dressing.nvim"] = {
     loaded = true,
     path = "/home/seer/.local/share/nvim/site/pack/packer/start/dressing.nvim",
     url = "https://github.com/stevearc/dressing.nvim"
   },
   ["kanagawa.nvim"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\vdragon\tload\rkanagawa\frequire\0" },
     loaded = true,
     path = "/home/seer/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
@@ -142,18 +137,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.alpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.theme\frequire\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
--- Config for: vimwiki
-time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.vimwiki\frequire\0", "config", "vimwiki")
-time([[Config for vimwiki]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\27zen.plugins.treesitter\frequire\0", "config", "nvim-treesitter")
@@ -162,10 +145,22 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for telescope.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26zen.plugins.telescope\frequire\0", "config", "telescope.nvim")
 time([[Config for telescope.nvim]], false)
+-- Config for: kanagawa.nvim
+time([[Config for kanagawa.nvim]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\vdragon\tload\rkanagawa\frequire\0", "config", "kanagawa.nvim")
+time([[Config for kanagawa.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.lualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
+-- Config for: vimwiki
+time([[Config for vimwiki]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24zen.plugins.vimwiki\frequire\0", "config", "vimwiki")
+time([[Config for vimwiki]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22zen.plugins.alpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
