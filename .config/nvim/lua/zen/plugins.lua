@@ -41,15 +41,14 @@ return require('packer').startup(function(use)
         config = function() require('zen.plugins.treesitter') end
     }
 
-    -- color scheme
-    use {
-        "catppuccin/nvim",
-        as = "catppuccin",
-        config = function() require('zen.plugins.theme') end
-    }
 
-    -- kanagawa
-    use "rebelot/kanagawa.nvim"
+    -- -- kanagawa
+    use {
+        "rebelot/kanagawa.nvim",
+        config = function()
+            require("kanagawa").load("dragon")
+        end
+    }
 
     -- pywal colors
 --    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
