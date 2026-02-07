@@ -14,6 +14,7 @@ rm -r tmpdir
 - fonts - iosevka and atkinson hyperlegible.
 - icons - Colloid icon theme purple.
 - panel colorizer for dock
+- install websockets pip for kurve
 **Backed up using konsave.**
 
 ## script
