@@ -6,12 +6,12 @@ set -euo pipefail
 echo "Starting comprehensive system cleanup..."
 echo
 
-echo "refresh mirros"
-rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist || echo "Mirror refresh failed"
+# echo "refresh mirros"
+# rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist || echo "Mirror refresh failed"
 echo
 
 echo "Updating system"
-paru -Syyu --noconfirm
+paru -Syu --noconfirm
 echo
 
 echo
@@ -26,7 +26,7 @@ echo
 echo "Cleaning AUR build cache"
 if [ -d ~/.cache/paru ]; then
     before=$(du -sb ~/.cache/paru | cut -f1)
-    rm -rf ~/.cache/paru/*
+    sudo rm -rvf ~/.cache/paru/*
     after=$(du -sb ~/.cache/paru | cut -f1)
     echo "Freed $(( (before-after)/1024/1024 )) MB from paru cache"
 fi
@@ -47,7 +47,6 @@ df -h / /home 2>/dev/null || df -h /
 echo
 echo "Memory usage:"
 free -h
-echo
 
 echo
 echo "Cleanup complete "
