@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "tab_size": 4,
+  "tab_size": 2,
   "terminal": {
     "font_family": "Iosevka Nerd Font"
   },

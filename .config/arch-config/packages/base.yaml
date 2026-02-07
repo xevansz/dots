@@ -52,3 +52,7 @@ packages:
   - helium-browser-bin
   - plasma6-applets-plasmusic-toolbar
   - lesspipe
+  - python-pip
+  - tree
+  - cava
+  - python-lsp-server

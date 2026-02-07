@@ -16,7 +16,7 @@
     "explorer.compactFolders": false,
     "editor.tabCompletion": "on",
     "editor.fontFamily": "'Iosevka', 'monospace', monospace",
-    "workbench.startupEditor": "none"
-    "code-runner.runInTerminal": true,
+    "workbench.startupEditor": "none",
+    "code-runner.runInTerminal": true
 }
 
