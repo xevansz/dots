@@ -10,7 +10,7 @@ alias mem="sudo ps_mem | tail"
 # My alias
 alias fuck="sudo"
 # alias yeet-orphans="paru -Qtdq | paru -Rns -" It's not working well, no need to rm orphans freq
-alias pwd="pwd && pwd | xclip -sel clipboard"
+alias pwdc='pwd | xclip -sel clipboard'
 alias ls="exa -alh --color=always --icons --group-directories-first"
 alias hx="helix"
 alias sysmain="bash /home/seer/.config/scripts/sysmaintenance.sh"
