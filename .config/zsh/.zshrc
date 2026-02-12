@@ -1,5 +1,3 @@
-[[ -f ~/.zprofile ]] && source ~/.zprofile
-
 # sys disable systemd-networkd-wait-online.service
 autoload -Uz add-zsh-hook compinit
 compinit
@@ -50,12 +48,3 @@ add-zsh-hook -Uz precmd rehash_precmd
 
 # theme
 source ~/.config/zsh/aguile.zsh
-
-# colored man
-export LESS_TERMCAP_mb=$'\E[01;32m'
-export LESS_TERMCAP_md=$'\E[01;32m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'

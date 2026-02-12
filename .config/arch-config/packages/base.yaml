@@ -9,14 +9,12 @@ packages:
 
   # Basic tools (uncomment as needed)
   - 7zip
-  - cursor-bin
   - discord
   - eza
   - fd
   - fzf
   - fzf-tab-source
   - helix
-  - htop
   - keepassxc
   - kitty
   - konsave
@@ -25,7 +23,6 @@ packages:
   - obsidian
   - python312
   - tk
-  - ttf-meslo-nerd
   - ttf-iosevka-nerd
   - ttf-atkinson-hyperlegible-next
   - freedownloadmanager
@@ -34,11 +31,8 @@ packages:
   - zsh-syntax-highlighting
   - zsh-autosuggestions
   - zsh
-  - zed
   - python-pywal
   - python-pdm
-  - docker
-  - docker-compose
   - yazi
   - yt-dlp
   - spotify
@@ -48,11 +42,8 @@ packages:
   - telegram-desktop
   - gtk-engine-murrine
   - gtk-engines
-  - bibata-cursor-theme-bin
   - helium-browser-bin
   - plasma6-applets-plasmusic-toolbar
-  - lesspipe
   - python-pip
   - tree
   - cava
-  - python-lsp-server

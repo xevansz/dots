@@ -25,9 +25,6 @@ export CXX=/usr/bin/g++
 
 # tools that other apps rely on
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
-export LESS=-R
-export MANPAGER="less -R"
-export MANROFFOPT='-P -c'
 
 # misc
 export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons

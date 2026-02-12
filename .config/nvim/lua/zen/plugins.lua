@@ -46,7 +46,7 @@ return require('packer').startup(function(use)
     use {
         "rebelot/kanagawa.nvim",
         config = function()
-            require("kanagawa").load("dragon")
+            require("kanagawa").load("wave")
         end
     }
 
