@@ -16,6 +16,11 @@ HISTSIZE=5000
 SAVEHIST=5000
 mkdir -p "$(dirname "$HISTFILE")"
 
+# keybinds
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[3~' delete-char
+
 setopt append_history inc_append_history share_history extended_history hist_expire_dups_first hist_verify
 setopt auto_menu menu_complete auto_cd
 setopt auto_param_slash dot_glob extended_glob # correct
