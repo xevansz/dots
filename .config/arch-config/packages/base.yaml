@@ -5,7 +5,7 @@ description: Base system packages
 
 packages:
   # Essential base system
-  - cuda
+  # - cuda we need to download specific ones
 
   # Basic tools (uncomment as needed)
   - 7zip
