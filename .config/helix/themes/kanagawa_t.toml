@@ -1,5 +1,5 @@
-# inherits = "kanagawa"
-inherits = "kanagawa-dragon"
+inherits = "kanagawa"
+#inherits = "kanagawa-dragon"
 
 "ui.bufferline.active" = { fg = "dragonGray2", bg = "dragonBlack3" }
 "ui.bufferline.background" = { bg = "dragonBlack3" }
