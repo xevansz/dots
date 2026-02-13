@@ -11,7 +11,7 @@ rm -r tmpdir
 
 ## theme
 - colors - Everforest, compline and kanagawa for everything.
-- fonts - iosevka and atkinson hyperlegible.
+- fonts - iosevka and atkinson hyperlegible or ttf-readex-pro.
 - icons - Colloid icon theme purple.
 - panel colorizer for dock
 - install websockets pip for kurve

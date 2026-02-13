@@ -15,8 +15,8 @@
     "workbench.tree.indent": 12,
     "explorer.compactFolders": false,
     "editor.tabCompletion": "on",
-    "editor.fontFamily": "'Iosevka', 'monospace', monospace",
+    "editor.lineHeight": 1.5,
     "workbench.startupEditor": "none",
-    "code-runner.runInTerminal": true
+    "editor.fontFamily": "'Cascadia Code NF', 'Iosevka Nerd Font Medium', 'DejaVu Sans Mono', 'Noto Sans Mono', monospace"
 }
 

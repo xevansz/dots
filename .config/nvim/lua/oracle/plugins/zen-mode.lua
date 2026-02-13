@@ -8,11 +8,11 @@ require("zen-mode").setup({
         }
     },
 
-    -- actions to execute when the Zen window opens
+    -- actions to execute when the oracle window opens
     on_open = function()
         vim.opt.linebreak = true
     end,
-    -- actions to execute when the Zen window closes
+    -- actions to execute when the oracle window closes
     on_close = function()
         vim.opt.linebreak = false
     end,

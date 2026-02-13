@@ -24,14 +24,12 @@ packages:
   - python312
   - tk
   - ttf-iosevka-nerd
-  - ttf-atkinson-hyperlegible-next
   - freedownloadmanager
   - windsurf
   - waterfox-bin
   - zsh-syntax-highlighting
   - zsh-autosuggestions
   - zsh
-  - python-pywal
   - python-pdm
   - yazi
   - yt-dlp
@@ -47,3 +45,5 @@ packages:
   - python-pip
   - tree
   - cava
+  - vscodium
+  - ttf-atkinson-hyperlegible
