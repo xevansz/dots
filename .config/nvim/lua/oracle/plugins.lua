@@ -32,13 +32,13 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         requires = { { 'nvim-lua/plenary.nvim' } },
-        config = function() require('zen.plugins.telescope') end
+        config = function() require('oracle.plugins.telescope') end
     }
 
     -- syntax highlighting
     use {
         'nvim-treesitter/nvim-treesitter',
-        config = function() require('zen.plugins.treesitter') end
+        config = function() require('oracle.plugins.treesitter') end
     }
 
 
@@ -56,26 +56,26 @@ return require('packer').startup(function(use)
     -- fancier status bar
     use {
         'nvim-lualine/lualine.nvim',
-        config = function() require('zen.plugins.lualine') end,
+        config = function() require('oracle.plugins.lualine') end,
     }
 
     use {
         'vimwiki/vimwiki',
-        config = function() require('zen.plugins.vimwiki') end,
+        config = function() require('oracle.plugins.vimwiki') end,
     }
 
     -- startup screen
     use {
         'goolord/alpha-nvim',
-        config = function() require('zen.plugins.alpha') end,
+        config = function() require('oracle.plugins.alpha') end,
     }
 
     -- distraction-free writing mode
     use {
         'folke/zen-mode.nvim',
         opt = true,
-        cmd = { 'ZenMode' },
-        config = function() require('zen.plugins.zen-mode') end
+        cmd = { 'oracleMode' },
+        config = function() require('oracle.plugins.zen-mode') end
     }
 
     -- automatically set up the configuration after cloning packer.nvim
