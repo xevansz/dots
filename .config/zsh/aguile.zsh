@@ -12,12 +12,16 @@ setopt prompt_subst
 # colors
 local highlight_bg=$bg[red]
 local magenta_bold=$fg_bold[magenta]
+local magenta=$fg[magenta]
 local white_bold=$fg_bold[white]
 local yellow_bold=$fg_bold[yellow]
+local yellow=$fg[yellow]
 local blue=$fg[blue]
 local blue_bold=$fg_bold[blue]
 local cyan_bold=$fg_bold[cyan]
 local green_bold=$fg_bold[green]
+local white=$fg[white]
+local green=$fg[green]
 
 local zen='ζ ➤'
 #local zen='λ'
@@ -31,16 +35,15 @@ git_branch() {
 
 # helpers
 get_usr_name() {
-  local name="%n"
   if [[ $EUID -eq 0 ]]; then
-    echo "%{$highlight_bg%}%{$white_bold%}$name%{$reset_color%}"
+    print -rP "%{$highlight_bg%}%{$white%}%n%{$reset_color%}"
   else
-    echo "%{$green_bold%}$name%{$reset_color%}"
+    print -rP "%{$green%}%n%{$reset_color%}"
   fi
 }
 
 box_name() {
-  [[ -f ~/.box-name ]] && <~/.box-name || print -r -- "$HOST"
+  print -r -- "$HOST"
 }
 
 get_current_dir() {
@@ -49,13 +52,12 @@ get_current_dir() {
 
 # prompt
 print_prompt_head() {
-  print -rP "[\
-%{$green_bold%}$(get_usr_name)\
+  print -rP "\
+$(get_usr_name)\
 %{$blue%}@\
-%{$cyan_bold%}$(box_name)\
-%{$blue_bold%} \
-%{$yellow_bold%}$(get_current_dir)%{$reset_color%} \
-$(git_branch)]"
+$(box_name):\
+%{$yellow%}$(get_current_dir)%{$reset_color%} \
+%{$white_bold%}$(git_branch)"
 }
 
 add-zsh-hook precmd print_prompt_head
