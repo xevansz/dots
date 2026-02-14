@@ -21,3 +21,21 @@ rm -r tmpdir
 ```
 curl -fsSL https://raw.githubusercontent.com/xevansz/dots/refs/heads/master/.config/scripts/installer.sh | bash
 ```
+
+## water fox cleanup
+```
+cache2/
+startupCache/
+minidumps/
+crashes/
+storage/temporary/
+weave/logs/
+*.sqlite-wal
+*.sqlite-shm
+lock
+AlternateServices.bin
+SiteSecurityServiceState.bin
+addonStartup.json.lz4
+```
+extensions
+`media downloader unleashes`
