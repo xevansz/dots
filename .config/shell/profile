@@ -17,7 +17,6 @@ export vi=vim
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/cuda/bin:$PATH"
 export LD_LIBRARY_PATH="/opt/cuda/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" # fail safe if LD_LIBRARY_PATH is not set
-. "$HOME/.cargo/env"
 
 # compilers
 export CC=/usr/bin/gcc

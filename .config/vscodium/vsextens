@@ -1,9 +1,11 @@
 Auto Rename Tag
 Better Comments
 Better commits
-Prettier
-ruff
+rust-lang.rust-analyzer
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
 Stylelint
+charliermarsh.ruff
 Multiple cursor case preserve
 
 THEME: Mayuki Reversal, kanagawa.
