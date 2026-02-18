@@ -26,8 +26,7 @@ local white_bold=$fg_bold[white]
 
 local highlight_bg=$bg[red]
 
-#local zen='ζ ➤➤'
-local zen='ζ >>'
+local zeta='ζ ➤'
 
 # box name
 box_name() {
@@ -67,4 +66,4 @@ $(git_branch)"
 
 add-zsh-hook precmd print_prompt_head
 
-PROMPT="%{$magenta_bold%}$zen %{$reset_color%}"
+PROMPT="%{$magenta_bold%}$zeta %{$reset_color%}"

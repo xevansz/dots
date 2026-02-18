@@ -22,15 +22,24 @@ mouse = true
 true-color = true
 scrolloff = 8 
 auto-format = true
-#line-number = "relative"
+# line-number = "relative"
 auto-save = true
 gutters = ["diff","diagnostics", "line-numbers", "spacer", "spacer"]
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
 completion-timeout = 0
-completion-trigger-len = 1
+completion-trigger-len = 2
 auto-pairs = false
 bufferline = "never"
-#rainbow-brackets = true
+insert-final-newline = true
+
+[editor.indent-guides]
+render = true
+character = "|"
+skip-levels = 1
+
+[editor.search]
+smart-case = true
+wrap-around = true
 
 [editor.file-picker]
 hidden = false
