@@ -1,5 +1,8 @@
-# theme = "base16_default"
-theme = "kanagawa_t"
+# theme = "kanagawa_t"
+# theme = "onedark"
+theme = "rose_pine_moon"
+# theme = "everforest_dark"
+# theme = "catppuccin_mocha"
 
 [keys.normal]
 "A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]

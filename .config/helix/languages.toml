@@ -1,6 +1,5 @@
 [[language]]
 name = "python"
+language-servers = ["ruff", "pyright"]
 formatter = { command = "ruff", args = ["format", "-"] }
-indent = { tab-width = 4, unit = " " }
 auto-format = true
-language-servers = ["pyright"]
