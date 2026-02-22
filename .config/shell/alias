@@ -18,7 +18,15 @@ alias td="hx ~/todo"
 alias hist="helix ~/.local/state/zsh/history"
 
 # git
-alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+dots() {
+ /usr/bin/git --git-dir="$HOME/.dots/" --work-tree="$HOME" "$@"
+}
+
+# setup dots as an executable::~/bin/dots: add to path 
+# ```bash
+# #!/usr/bin/env bash
+# exec /usr/bin/git --git-dir="$HOME/.dots/" --work-tree="$HOME" "$@"
+# ```
 
 # youtube
 alias ytdl="yt-dlp -f 'bestvideo+bestaudio' -o '%(title)s.%(ext)s' --external-downloader aria2c"
