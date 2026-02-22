@@ -2,6 +2,12 @@
 # dotfiles
 A better $HOME, a better me.
 
+## Screenshots
+<div align="center">
+  <img src="./.config/scripts/sad_little_rice1.png" alt="rice" style="border-radius:10px;">
+  <img src="./.config/scripts/sad_little_rice2.png" alt="rice" style="border-radius:10px;">
+</div>
+
 ## setting up the dotfiles 
 ```
 git clone --separate-git-dir=$HOME/.dots git@github.com:xevansz/dots.git tmpdir
@@ -39,3 +45,5 @@ addonStartup.json.lz4
 ```
 extensions
 `media downloader unleashes`
+
+
