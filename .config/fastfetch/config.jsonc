@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "auto",
+    "padding": {
+      "top": 1,
+      "left": 2
+    }
+  },
+
+  "display": {
+    "separator": "  ›  "
+  },
+
+  "modules": [
+    "title",
+    "separator",
+
+    { "type": "os", "key": "󰣇 OS" },
+    { "type": "host", "key": "󰌢 Host" },
+    { "type": "kernel", "key": "󰌢 Kernel" },
+    { "type": "uptime", "key": "󰅐 Uptime" },
+    { "type": "packages", "key": "󰏖 Packages" },
+
+    "separator",
+
+    { "type": "shell", "key": "󰆍 Shell" },
+    { "type": "de", "key": "󰧨 DE" },
+    { "type": "wmtheme", "key": "󰉼 WM Theme" },
+    { "type": "theme", "key": "󰉼 GTK Theme" },
+    { "type": "font", "key": "󰛖 Font" },
+
+    "separator",
+
+    { "type": "terminal", "key": " Terminal" },
+    { "type": "terminalfont", "key": "󰛖 Term Font" },
+
+    "separator",
+
+    { "type": "cpu", "format": "{name} ({usage}%)", "key": "󰻠 CPU" },
+    { "type": "gpu", "key": "󰢮 GPU" },
+    { "type": "memory", "key": "󰍛 Memory" },
+
+    "separator",
+
+    { "type": "localip", "showIpv6": false, "key": "󰩠 Local IP" }
+  ]
+}
