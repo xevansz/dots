@@ -39,7 +39,11 @@
   },
     "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off",
+    },
     "editor.formatOnSave": false,
   },
 
@@ -50,4 +54,5 @@
     "MD022": false, // Allow headings without blank lines
     "MD032": false, // Allow lists without blank lines
   },
+  "editor.detectIndentation": false,
 }
