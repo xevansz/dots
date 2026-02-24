@@ -7,7 +7,7 @@
 inherits = "rose_pine"
 
 [palette]
-base           = "#232136" 
+base           = "#232136"
 surface        = "#2a273f" 
 overlay        = "#393552"
 muted          = "#6e6a86"
@@ -28,3 +28,4 @@ iris_10        = "#342e4a"
 highlight_low  = "#2a283e"
 highlight_med  = "#44415a"
 highlight_high = "#56526e"
+

@@ -1,5 +1,7 @@
-
-# dotfiles
+<div align="center">
+    <h1>【 Kemuri dotfiles 】</h1>
+    <h3></h3>
+</div>
 A better $HOME, a better me.
 
 ## Screenshots
