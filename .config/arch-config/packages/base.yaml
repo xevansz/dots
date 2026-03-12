@@ -47,6 +47,5 @@ packages:
   - cava
   - vscodium
   - ttf-atkinson-hyperlegible
-  - pyright
-  - ruff
   - cava
+  - pre-commit

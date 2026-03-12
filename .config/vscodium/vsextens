@@ -5,9 +5,12 @@ rust-lang.rust-analyzer
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 Stylelint
-charliermarsh.ruff
 Multiple cursor case preserve
+charliermarsh.ruff
 davidanson.vscode-markdownlint
+Cline
+
+pylint and ruff
 
 THEME: Mayuki Reversal, kanagawa.
 Font: Cascadia Code
