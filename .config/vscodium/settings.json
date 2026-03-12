@@ -1,58 +1,57 @@
 {
   "window.commandCenter": true,
   "workbench.colorTheme": "Kanagawa Dragon",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+
   "explorer.confirmDelete": false,
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.focusAfterRun": "terminal",
+  "explorer.compactFolders": false,
+
   "editor.fontSize": 15,
   "editor.fontLigatures": "'calt'",
-  "editor.tabSize": 2,
-  "breadcrumbs.enabled": false,
-  "workbench.sideBar.location": "right",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 12,
-  "explorer.compactFolders": false,
-  "editor.tabCompletion": "on",
-  "editor.lineHeight": 1.5,
   "editor.fontFamily": "'Cascadia Code NF', 'Iosevka Nerd Font Medium', 'DejaVu Sans Mono', 'Noto Sans Mono', monospace",
-  "workbench.startupEditor": "none",
+  "editor.lineHeight": 1.5,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabCompletion": "on",
+
   "editor.formatOnSave": true,
+
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.ruff": true,
+    "source.fixAll.eslint": true
   },
+
+  "terminal.integrated.focusAfterRun": "terminal",
+
+  // -------- JAVASCRIPT --------
   "eslint.validate": ["javascript", "javascriptreact"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // -------- PYTHON --------
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
-  },
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-  },
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-  },
-    "[markdown]": {
+
+  // -------- MARKDOWN --------
+  "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
-      "other": "off",
+      "other": "off"
     },
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
 
   "markdownlint.config": {
-    "MD013": false, // Disable line length rule
-    "MD041": false, // Allow missing H1
-    "MD033": false, // Allow inline HTML
-    "MD022": false, // Allow headings without blank lines
-    "MD032": false, // Allow lists without blank lines
-  },
-  "editor.detectIndentation": false,
+    "MD013": false,
+    "MD041": false,
+    "MD033": false,
+    "MD022": false,
+    "MD032": false
+  }
 }

@@ -6,6 +6,7 @@ alias cp="cp -v"
 alias mv="mv -v"
 alias copy="xclip -sel clipboard"
 alias mem="sudo ps_mem | tail"
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
 
 # My alias
 alias fuck="sudo"
@@ -33,7 +34,6 @@ alias ytdl="yt-dlp -f 'bestvideo+bestaudio' -o '%(title)s.%(ext)s' --external-do
 alias ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader aria2c"
 alias ytvdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader aria2c"
 alias ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader aria2c"
-
 yt() {
  echo "yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader aria2c --referer domain URL"
 }

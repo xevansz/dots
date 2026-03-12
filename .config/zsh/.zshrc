@@ -12,8 +12,8 @@ zstyle ':completion::complete:*' gain-privileges 1
 
 # history config
 export HISTFILE="$HOME/.local/state/zsh/history"
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=10000
+SAVEHIST=10000
 mkdir -p "$(dirname "$HISTFILE")"
 
 # keybinds
