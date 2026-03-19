@@ -15,9 +15,8 @@ matches:
   - trigger: ":trans"
     replace: "translate this into English, taking the previous context into account:" 
 
-  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
-
-  # But matches can also be dynamic:
+  - trigger: ":report"
+    replace: "I am writing a project report for my capstone project. Help me with the contents of the report"
 
   # Print the current date
   - trigger: ":date"

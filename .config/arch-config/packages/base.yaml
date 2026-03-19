@@ -49,3 +49,5 @@ packages:
   - ttf-atkinson-hyperlegible
   - cava
   - pre-commit
+  - sddm-kcm
+  - espanso-wayland

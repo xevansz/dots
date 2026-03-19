@@ -1,0 +1,58 @@
+term = xterm-256color
+
+font-family = "Iosevka Nerd Font Mono"
+font-size = 12
+
+window-decoration = none
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+scrollback-limit = 5000
+
+copy-on-select = true
+confirm-close-surface = false
+
+
+
+# --- Colors (Kanagawa Bones Inspired) ---
+
+background = #1f1f28
+foreground = #dcd7ba
+
+cursor-color = #c8c093
+selection-background = #2d4f67
+selection-foreground = #dcd7ba
+
+# Black
+palette = 0=#16161d
+palette = 8=#727169
+
+# Red
+palette = 1=#c34043
+palette = 9=#e82424
+
+# Green
+palette = 2=#76946a
+palette = 10=#98bb6c
+
+# Yellow
+palette = 3=#c0a36e
+palette = 11=#e6c384
+
+# Blue
+palette = 4=#7e9cd8
+palette = 12=#7fb4ca
+
+# Magenta
+palette = 5=#957fb8
+palette = 13=#938aa9
+
+# Cyan
+palette = 6=#6a9589
+palette = 14=#7aa89f
+
+# White
+palette = 7=#c8c093
+palette = 15=#dcd7ba
