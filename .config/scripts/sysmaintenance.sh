@@ -43,7 +43,7 @@ echo
 
 echo "Final system status"
 echo "Disk usage:"
-df -h / /home 2>/dev/null || df -h /
+sudo df -h / /home 2>/dev/null || df -h /
 echo
 echo "Memory usage:"
 free -h
