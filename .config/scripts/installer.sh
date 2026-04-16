@@ -68,5 +68,6 @@ cd "$DCLI_DIR"
 echo "Installing dcli..."
 bash -c "$DCLI_DIR/install.sh"
 
-echo "dots setup complete, Apply konsave theme and Run system maintenance after running dcli sync"
+echo "dots setup complete"
+dcli sync
 
