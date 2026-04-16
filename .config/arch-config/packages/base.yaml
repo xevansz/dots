@@ -5,49 +5,72 @@ description: Base system packages
 
 packages:
   # Essential base system
-  # - cuda we need to download specific ones
+  - cuda we need to download specific ones
 
-  # Basic tools (uncomment as needed)
-  - 7zip
+  # Apps
   - discord
+  - spotify
+  - telegram-desktop
+  - obsidian
+  - libreoffice-still
+  - okular
+  - zotero-bin
+  - waterfox-bin
+  - helium-browser-bin
+  - freedownloadmanager
+
+  # Dev
+  - python312
+  - python-pip
+  - python-pdm
+  - nodejs
+  - npm
+  - ruff
+  - pre-commit
+  - android-tools
+
+  # cli
   - eza
   - fd
   - fzf
   - fzf-tab-source
-  - helix
-  - keepassxc
-  - kitty
-  - konsave
-  - libreoffice-still
+  - ripgrep
+  - yazi
+  - tree
+  - tmux
+  - fastfetch
+  - cava
+  - yt-dlp
+
+  # editors:
   - neovim
-  - obsidian
-  - python312
-  - tk
-  - ttf-iosevka-nerd
-  - freedownloadmanager
-  - windsurf
-  - waterfox-bin
+  - helix
+  - vscodium
+
+  # shell:
+  - zsh
   - zsh-syntax-highlighting
   - zsh-autosuggestions
-  - zsh
-  - python-pdm
-  - yazi
-  - yt-dlp
-  - spotify
-  - xclip
-  - xsel
-  - okular
-  - telegram-desktop
+  - kitty
+  - espanso-wayland
+
+  # ui:
+  - ttf-iosevka-nerd
+  - ttf-atkinson-hyperlegible
   - gtk-engine-murrine
   - gtk-engines
-  - helium-browser-bin
   - plasma6-applets-plasmusic-toolbar
-  - python-pip
-  - tree
-  - cava
-  - vscodium
-  - ttf-atkinson-hyperlegible
-  - cava
-  - pre-commit
+  - konsave
   - sddm-kcm
-  - espanso-wayland
+
+  # security:
+  - keepassxc
+
+  # utils:
+  - 7zip
+  - xclip
+  - xsel
+
+  # misc:
+  - windsurf
+  - tk
