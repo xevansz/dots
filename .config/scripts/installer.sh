@@ -46,9 +46,15 @@ else
 fi
 
 # gnupg folder
-mkdir -p "$HOME/.local/share/gnupg"
-chmod 700 "$HOME/.local/share/gnupg"
+GNUDIR="$HOME/.local/share/gnupg"
 
+if [[ -d "$GNUDIR" ]]; then
+  chmod 700 "$GNUDIR"
+else
+  mkdir -p "$GNUDIR"
+  chmod 700 "$GNUDIR"
+fi
+  
 # dcli
 DCLI_DIR="/tmp/dcli"
 
@@ -62,8 +68,7 @@ cd "$DCLI_DIR"
 echo "Installing dcli..."
 bash -c "$DCLI_DIR/install.sh"
 
-echo "dots install && setup complete"
-echo "Apply konsave theme && Install packages"
-echo "Run system maintenance after running dcli"
-# dcli sync
+echo "dots setup complete"
+echo "Apply konsave theme"
+echo "Run system maintenance after running dcli sync"
 
