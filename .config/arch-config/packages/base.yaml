@@ -22,12 +22,13 @@ packages:
   # Dev
   - python312
   - python-pip
-  - python-pdm
   - nodejs
   - npm
   - ruff
   - pre-commit
   - android-tools
+  - docker
+  - docker-compose
 
   # cli
   - eza
@@ -40,6 +41,7 @@ packages:
   - tmux
   - cava
   - yt-dlp
+  - cloudflare-warp-bin
 
   # editors:
   - neovim
@@ -58,6 +60,7 @@ packages:
   - ttf-atkinson-hyperlegible
   - gtk-engine-murrine
   - gtk-engines
+  - rodin
   - plasma6-applets-plasmusic-toolbar
   - konsave
   - sddm-kcm
@@ -69,6 +72,9 @@ packages:
   - 7zip
   - xclip
   - xsel
+  - coolercontrol
+  - coolercontrold
+  - liquidctl
 
   # misc:
   - windsurf
