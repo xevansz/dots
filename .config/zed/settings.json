@@ -7,7 +7,40 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "tab_size": 2,
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "agent": {
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "tabs": {
+    "show_diagnostics": "off"
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "button": false
+  },
+  "project_panel": {
+    "dock": "right",
+    "auto_fold_dirs": false
+  },
+  "base_keymap": "VSCode",
+  "cursor_blink": true,
+  "buffer_font_fallbacks": [
+    "Iosevka Nerd Font Medium",
+    "DejaVu Sans Mono",
+    "Noto Sans Mono",
+    "monospace"
+  ],
+  "tab_size": 4,
   "terminal": {
     "font_family": "Iosevka Nerd Font"
   },
@@ -27,11 +60,11 @@
     "enabled": false
   },
   "ui_font_family": "Atkinson Hyperlegible Next",
-  "buffer_font_family": "Atkinson Hyperlegible Next",
+  "buffer_font_family": "Cascadia Code NF",
   "icon_theme": {
     "mode": "system",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Material Icon Theme"
   },
   "auto_update": false,
   "helix_mode": false,
@@ -39,7 +72,7 @@
   "buffer_font_size": 15.0,
   "theme": {
     "mode": "system",
-    "light": "Kanagawa Lotus",
-    "dark": "Kanagawa Wave",
+    "light": "One Light",
+    "dark": "Tokyo Night Storm",
   },
 }

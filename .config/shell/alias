@@ -37,6 +37,14 @@ alias ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --externa
 yt() {
  echo "yt-dlp -o '%(title)s.%(ext)s' --external-downloader aria2c --referer domain URL"
 }
+yt1() {
+ yt-dlp --impersonate Chrome-136 --cookies-from-browser firefox URL
+}
 
 # grub
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# cpu-boost
+alias boost-on='echo 1 | sudo tee /sys/devices/system/cpu/cpufreq/boost'
+alias boost-off='echo 0 | sudo tee /sys/devices/system/cpu/cpufreq/boost'
+alias boost-status='cat /sys/devices/system/cpu/cpufreq/boost'

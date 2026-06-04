@@ -53,3 +53,4 @@ add-zsh-hook -Uz precmd rehash_precmd
 
 # theme
 source ~/.config/zsh/aguile.zsh
+source /usr/share/nvm/init-nvm.sh
