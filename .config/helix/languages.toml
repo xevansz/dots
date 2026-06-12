@@ -3,3 +3,10 @@ name = "python"
 language-servers = ["ruff", "pyright"]
 formatter = { command = "ruff", args = ["format", "-"] }
 auto-format = true
+
+# Go
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+language-servers = ["gopls"]
