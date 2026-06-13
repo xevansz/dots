@@ -12,7 +12,7 @@ alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias fuck="sudo"
 # alias yeet-orphans="paru -Qtdq | paru -Rns -" It's not working well, no need to rm orphans freq
 alias pwdc='pwd | xclip -sel clipboard'
-alias ls="exa -alh --color=always --icons --group-directories-first"
+alias ls="exa -ailh --color=always --icons --group-directories-first"
 alias hx="helix"
 alias sysmain="bash ~/.config/scripts/sysmaintenance.sh"
 alias td="hx ~/todo"
@@ -38,7 +38,7 @@ yt() {
  echo "yt-dlp -o '%(title)s.%(ext)s' --external-downloader aria2c --referer domain URL"
 }
 ytl() {
- echo "yt-dlp --impersonate Chrome-136 --cookies-from-browser firefox URL"
+ yt-dlp --impersonate Chrome-136 --cookies-from-browser firefox "$@"
 }
 
 # grub
