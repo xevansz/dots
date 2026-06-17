@@ -1,49 +1,143 @@
 {
-  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/dev/doc/json_schema.json",
-
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "auto",
+    "source": "./arch.txt",
+    "color": {
+      "1": "#C4A7E7"
+    },
     "padding": {
-      "top": 1,
+      "top": 2,
+      "right": 6,
       "left": 2
     }
   },
-
   "display": {
-    "separator": "  ›  "
+    "separator": " "
+  },
+  "modules": [
+  "break",
+  "break",
+
+  {
+    "type": "title",
+    "keyWidth": 10,
+    "color": "#C4A7E7"
   },
 
-  "modules": [
-    "title",
-    "separator",
+  "break",
 
-    { "type": "os", "key": "󰣇 OS" },
-    { "type": "host", "key": "󰌢 Host" },
-    { "type": "kernel", "key": "󰌢 Kernel" },
-    { "type": "uptime", "key": "󰅐 Uptime" },
-    { "type": "packages", "key": "󰏖 Packages" },
+  {
+    "type": "os",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4",
+    "format": "Arch (Btw)"
+  },
 
-    "separator",
+  {
+    "type": "host",
+    "key": "🖥 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4",
+    "format": "Zyrakruse"
+  },
 
-    { "type": "shell", "key": "󰆍 Shell" },
-    { "type": "de", "key": "󰧨 DE" },
-    { "type": "wmtheme", "key": "󰉼 WM Theme" },
-    { "type": "theme", "key": "󰉼 GTK Theme" },
-    { "type": "font", "key": "󰛖 Font" },
+  {
+    "type": "shell",
+    "format": "Pain in my dih",
+    "key": ">_",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    "separator",
+  {
+    "type": "terminal",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    { "type": "terminal", "key": " Terminal" },
-    { "type": "terminalfont", "key": "󰛖 Term Font" },
+  {
+    "type": "wm",
+    "format": "{} (wayland)",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    "separator",
+  {
+    "type": "cpu",
+    "key": "󰍛 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    { "type": "cpu", "key": "󰻠 CPU" },
-    { "type": "gpu", "key": "󰢮 GPU" },
-    { "type": "memory", "key": "󰍛 Memory" },
+  {
+    "type": "gpu",
+    "key": "󰢮 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    "separator",
+  {
+    "type": "memory",
+    "key": "🎟 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
 
-    { "type": "localip", "showIpv6": false, "key": "󰩠 Local IP" }
-  ]
+  {
+    "type": "disk",
+    "folders": "/",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "battery",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "wifi",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "localip",
+    "key": "󰩟 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "dns",
+    "key": "󰇖 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "media",
+    "key": "󰝚 ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  {
+    "type": "uptime",
+    "key": " ",
+    "keyColor": "#c4a7e7",
+    "color": "#e0def4"
+  },
+
+  "break",
+  "break",
+  "break"
+]
 }
