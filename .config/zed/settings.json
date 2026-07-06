@@ -25,6 +25,9 @@
     "show_diagnostics": "off"
   },
   "diagnostics": {
+    "inline": {
+      "enabled": true
+    },
     "include_warnings": true,
     "button": false
   },

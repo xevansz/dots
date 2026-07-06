@@ -1,10 +1,6 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "./arch.txt",
-    "color": {
-      "1": "#C4A7E7"
-    },
     "padding": {
       "top": 2,
       "right": 6,
@@ -44,7 +40,7 @@
 
   {
     "type": "shell",
-    "format": "Pain in my dih",
+    "format": "Pain in my dih(zsh)",
     "key": ">_",
     "keyColor": "#c4a7e7",
     "color": "#e0def4"

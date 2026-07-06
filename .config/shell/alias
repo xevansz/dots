@@ -12,7 +12,7 @@ alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias fuck="sudo"
 # alias yeet-orphans="paru -Qtdq | paru -Rns -" It's not working well, no need to rm orphans freq
 alias pwdc='pwd | xclip -sel clipboard'
-alias ls="exa -ailh --color=always --icons --group-directories-first"
+alias ls="exa -alh --color=always --icons --group-directories-first"
 alias hx="helix"
 alias sysmain="bash ~/.config/scripts/sysmaintenance.sh"
 alias td="hx ~/todo"
@@ -48,3 +48,8 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias boost-on='echo 1 | sudo tee /sys/devices/system/cpu/cpufreq/boost'
 alias boost-off='echo 0 | sudo tee /sys/devices/system/cpu/cpufreq/boost'
 alias boost-status='cat /sys/devices/system/cpu/cpufreq/boost'
+
+# vids
+bgmi(){
+ ffmpeg -noautorotate -i "$1" -vf "transpose=1" -r 60 -fps_mode cfr -c:v libx264 -preset fast -crf 17 -movflags +faststart -c:a copy "${1%.*}_cfr.mp4";
+}
