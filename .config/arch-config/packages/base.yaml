@@ -14,7 +14,6 @@ packages:
   - obsidian
   - libreoffice-still
   - okular
-  - zotero-bin
   - waterfox-bin
   - helium-browser-bin
   - freedownloadmanager
@@ -42,6 +41,8 @@ packages:
   - cava
   - yt-dlp
   - cloudflare-warp-bin
+  # - taplo-cli
+  # - bash-language-server
 
   # editors:
   - neovim
@@ -75,6 +76,7 @@ packages:
   - coolercontrol
   - coolercontrold
   - liquidctl
+  - marksman
 
   # misc:
   - windsurf

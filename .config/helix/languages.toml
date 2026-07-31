@@ -7,6 +7,43 @@ auto-format = true
 # Go
 [[language]]
 name = "go"
-auto-format = true
-formatter = { command = "goimports" }
 language-servers = ["gopls"]
+formatter = { command = "goimports" }
+auto-format = true
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
+comment-tokens = ["-", "+", "*", "1.", ">", "- [ ]", "* []", "1)"]
+
+# HTML + CSS (if you do any frontend)
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+# Dockerfile
+[[language]]
+name = "dockerfile"
+language-servers = ["docker-langserver"]
+
+# Bash / Shell scripts
+[[language]]
+name = "bash"
+# language-servers = ["bash-language-server"]
+formatter = { command = "shfmt" }
+auto-format = true
+
+# TOML (Helix config, Cargo.toml, pyproject.toml, etc.)
+[[language]]
+name = "toml"
+language-servers = ["taplo"]
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
