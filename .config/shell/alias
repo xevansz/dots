@@ -4,7 +4,8 @@ alias sys="sudo systemctl"
 alias rm="rm -rvf"
 alias cp="cp -v"
 alias mv="mv -v"
-alias copy="xclip -sel clipboard"
+# alias copy="xclip -sel clipboard"
+alias copy="wl-copy"
 alias mem="sudo ps_mem | tail"
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 
