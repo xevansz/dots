@@ -41,6 +41,7 @@ packages:
   - cava
   - yt-dlp
   - cloudflare-warp-bin
+  - gopls
   # - taplo-cli
   # - bash-language-server
 
