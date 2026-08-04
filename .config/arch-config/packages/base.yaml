@@ -65,7 +65,6 @@ packages:
   - rodin
   - plasma6-applets-plasmusic-toolbar
   - konsave
-  - sddm-kcm
 
   # security:
   - keepassxc
