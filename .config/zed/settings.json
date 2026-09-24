@@ -65,7 +65,7 @@
   "ui_font_family": "Atkinson Hyperlegible Next",
   "buffer_font_family": "Cascadia Code NF",
   "icon_theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "Zed (Default)",
     "dark": "Material Icon Theme"
   },
@@ -74,8 +74,8 @@
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
-    "dark": "Tokyo Night Storm",
+    "dark": "One Dark",
   },
 }
